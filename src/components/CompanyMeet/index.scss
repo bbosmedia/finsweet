@@ -1,0 +1,66 @@
+.company-meet{
+    .section-title{
+        @apply max-w-[624px];
+    }
+
+    .company-meet-text{
+        @apply max-w-[505.5px] opacity-60 mt-6 mb-16;
+
+        @media screen and (max-width: 425px) {
+            @apply mb-6;
+        }
+    }
+
+    .company-meet-inner{
+        @apply grid grid-cols-4 relative;
+
+        .card{
+            @apply relative h-[320px] w-full;
+            overflow: hidden;
+            img{
+                @apply h-full w-full;
+            }
+
+            .card-content{
+                @apply absolute h-full w-full bg-siteDark bg-opacity-90 top-0 left-0 flex p-12 flex-col justify-end text-white;
+                transform: translateX(-100%);
+                transition: 0.4s ease-in-out;
+
+                h5{
+                    @apply font-semibold text-[24px] mb-2;
+                    line-height: 36px;
+                }
+
+                p{
+                    @apply opacity-60;
+                }
+
+                .socials{
+                    @apply flex gap-6 mt-6;
+                }
+            }
+
+            &:hover{
+                .card-content{
+                    transform: translateX(0);
+                }
+            }
+
+            @media screen and (max-width: 425px) {
+                @apply h-auto w-auto;
+
+                img{
+                    @apply w-full h-auto;
+                }
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            @apply grid-cols-2;
+        }
+
+        @media screen and (max-width: 425px) {
+            @apply grid-cols-1;
+        }
+    }
+}

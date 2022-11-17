@@ -1,0 +1,38 @@
+.career-item-main{
+
+    .container{
+        @apply lsm:px-0;
+        .inner{
+            @apply bg-lightBlue;
+
+            .heading{
+                @apply flex justify-center items-center gap-[95px] md:justify-between px-6 md:gap-9;
+                border-bottom: 4px solid #E0F1F2;
+                overflow-x: scroll;
+                &::-webkit-scrollbar{
+                    @apply w-0 h-0 bg-transparent;
+                }
+
+                .heading-btn{
+                    @apply pt-[43px] pb-[33px] -mb-1 text-[24px] leading-6 font-semibold lsm:text-[18px] lsm:pt-6 lsm:pb-6;
+                    border-bottom: 4px solid #E0F1F2;
+                    transition: 0.4s ease-in-out;
+
+                    &:hover, &.active{
+                        @apply text-main border-b-main;
+                    }
+                }
+            }
+
+            .body{
+                @apply py-[129px] px-8 flex items-center justify-center xsm:px-6 md:py-12;
+
+                ul{
+                    @apply max-w-[842px] flex flex-col gap-5 xlsm:gap-3;
+
+                    list-style: disc;
+                }
+            }
+        }
+    }
+}

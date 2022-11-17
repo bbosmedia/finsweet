@@ -1,0 +1,24 @@
+
+
+.company-logos{
+    .container{
+        @apply bg-lightGrey flex items-center gap-[32px] justify-between px-16;
+        overflow-x: scroll;
+
+        &::-webkit-scrollbar {
+            @apply h-0 w-0 bg-transparent;
+        }
+
+        &::-webkit-scrollbar-track {
+            width: 0px;
+          }
+
+        img{
+            @apply h-[104px] w-[186px];
+        }
+
+        @media screen and (max-width: 425px) {
+            @apply px-6;
+        }
+    }
+}

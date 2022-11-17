@@ -1,0 +1,62 @@
+@media screen and (max-width: 425px){
+    .subscription{
+        @apply p-0 mb-5;
+    }
+} 
+
+.subscription-inner{
+    @apply relative p-24 relative;
+    background: #666DFF;
+
+    &::before{
+        @apply absolute top-0 right-0 h-full w-[24px];
+        background: linear-gradient(180deg,  #FFA155 0%, #FFA155 25%, #FFE6D2 25%, #FFE6D2 75%, #444CFC 75%, #444CFC 100%);
+        content: '';
+
+        @media screen and (max-width: 425px) {
+            @apply hidden;
+        }
+    }
+
+    & > div{
+        @apply grid grid-cols-2 items-center justify-between;
+
+        h3{
+            @apply font-semibold text-white max-w-[488px] gap-5;
+            font-size: 36px;
+            line-height: 54px;
+
+            @media screen and (max-width: 425px) {
+                font-size: 24px;
+            line-height: 1.4;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            @apply grid-cols-1 gap-8;
+        }
+    }
+
+    .section-name{
+        @apply text-white mb-3;
+    }
+
+    .angle{
+        @apply absolute top-0 left-0 h-[99px];
+        @media screen and (max-width: 425px) {
+            @apply hidden;
+        }
+    }
+
+    form{
+        width: 100%;
+
+        input{
+            @apply border-none outline-none bg-white w-full p-5 max-w-[488px];
+        }
+    }
+
+    @media screen and (max-width: 425px) {
+        @apply py-10 px-6;
+    }
+}

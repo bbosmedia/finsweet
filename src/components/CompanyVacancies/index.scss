@@ -1,0 +1,24 @@
+.company-vacancies{
+    @apply mb-16 lsm:mb-6;
+}
+
+.company-vacancies-inner{
+    @apply bg-lightBlue p-[72px] grid grid-cols-3 gap-[32px] lg:grid-cols-2 md:grid-cols-1 md:p-6 xlsm:p-4 xlsm:gap-4;
+
+    .vacancy-name{
+        @apply font-semibold mb-3 text-siteDark leading-7 text-[16px];
+
+    }
+
+    .vacancy-time, .vacancy-salary{
+        @apply text-[16px] leading-4 text-siteDark opacity-60 mb-1;
+    }
+}
+
+.vacancy-link{
+    @apply flex items-center gap-4 mt-12;
+
+    span{
+        @apply text-main text-[16px] font-medium;
+    }
+}

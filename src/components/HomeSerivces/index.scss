@@ -1,0 +1,44 @@
+.home-services{
+
+    .section-title{
+        max-width: 777px;
+    }
+
+    .main-btn{
+        @apply mt-10;
+    }
+
+    .cards{
+        @apply grid gap-[32px] grid-cols-3 mt-20;
+
+        .card{
+            @apply bg-white p-[31px];
+
+            img{
+                @apply w-[47px] mb-4;
+            }
+
+            h5{
+                @apply font-semibold;
+                line-height: 28px;
+            }
+
+            p{
+                @apply mb-6;
+                line-height: 24px;
+                color: #5D5F6D;
+            }
+
+            a{
+                @apply flex items-center gap-3 text-main;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            @apply grid-cols-1;
+        }
+        @media screen and (max-width: 425px) {
+            @apply mt-7;
+        }
+    }
+}

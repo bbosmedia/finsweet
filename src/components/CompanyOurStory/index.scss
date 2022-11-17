@@ -1,0 +1,52 @@
+.company-our-story{
+    @apply pt-24;
+
+    .container{
+        @apply grid grid-cols-2 gap-5;
+
+        @media screen and (max-width:768px) {
+            @apply grid-cols-1;
+        }
+    }
+
+    .section-name{
+        @apply font-semibold opacity-90 text-siteDark;
+        letter-spacing: 0;
+    }
+
+    .section-title{
+        @apply max-w-[549px] mb-6;
+        @media screen and (max-width: 425px) {
+            @apply mb-4;
+        }
+    }
+
+    .left{
+        p{
+            @apply max-w-[550px];
+        }
+    }
+
+    .right{
+        @apply bg-siteOrange flex items-center justify-center bg-opacity-60 p-5;
+
+        .inner{
+            @apply grid grid-cols-2 gap-[62px];
+
+            .card{
+                .line{
+                    @apply w-[72px] h-[6px] mb-[4px];
+                    background: linear-gradient(90deg,  #FFA155 0%, #FFA155 25%, #FFE6D2 25%, #FFE6D2 75%, #444CFC 75%, #444CFC 100%);
+                }
+            }
+
+            @media screen and (max-width: 425px) {
+                @apply grid-cols-1;
+            }
+        }
+    }
+
+    @media screen and (max-width: 425px) {
+        @apply pt-6;
+    }
+}

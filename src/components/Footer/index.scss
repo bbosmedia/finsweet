@@ -1,0 +1,107 @@
+.footer-main{
+    @apply pt-12 pb-16 relative grid gap-5;
+    grid-template-columns: 1fr 1.3fr;
+
+    @media screen and (max-width: 768px) {
+        @apply grid-cols-1;
+    }
+
+    img{
+        @apply absolute top-0 left-5;
+    }
+
+    .footer-main-left{
+        .heading{
+            @apply text-siteDark font-semibold mb-10 max-w-[453px];
+            font-size: 48px;
+            line-height: 1.2;
+        }
+
+        .subheading{
+            @apply text-siteDark mb-7;
+            line-height: 1.5;
+            font-size: 24px;
+        }
+
+        .links{
+            @apply mb-4;
+            a{
+                @apply block font-medium;
+            }
+        }
+
+        .line{
+            @apply max-w-[268px] h-[1px] bg-black opacity-[0.08] mb-4;
+        }
+
+        .address{
+            @apply max-w-[207px] font-medium;
+            font-size: 14px
+        }
+    }
+
+    .footer-main-right{
+        @apply flex flex-col justify-between gap-5;
+        .footer-main-links{
+            @apply grid grid-cols-3;
+
+            .site-links{
+                @apply flex flex-col gap-3;
+            }
+
+            a{
+                @apply hover:text-main;
+            }
+
+            .bold{
+                @apply font-semibold;
+            }
+
+            @media screen and (max-width: 425px) {
+                @apply grid-cols-1 gap-8;
+            }
+        }
+
+        .contact-link{
+            @apply flex items-center gap-2 hover:text-main;
+            align-self: flex-end;
+            .colored-box{
+                @apply w-[50px] h-[14px];
+                background: linear-gradient(90deg,  #FFD3AF 0%,#FFD3AF 30%, #666DFF 30%, #666DFF 100%) ;
+            }
+        }
+    }
+}
+
+.footer-bottom{
+    @apply bg-siteOrange;
+
+    .container{
+        @apply flex items-center justify-between py-5;
+
+        .footer-bottom-right{
+            @apply flex items-center gap-4;
+            @media screen and (max-width: 425px) {
+                @apply order-2;
+            }
+            @media screen and (max-width: 320px) {
+                @apply flex-col;
+            }
+        }
+
+        .socials{
+            @apply flex items-center gap-3;
+            @media screen and (max-width: 425px) {
+                @apply order-1;
+            }
+        }
+
+        @media screen and (max-width: 425px) {
+            @apply flex-col gap-7;
+        }
+    }
+
+    img{
+        @apply h-[24.3px];
+    }
+}
