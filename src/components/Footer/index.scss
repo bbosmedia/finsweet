@@ -12,7 +12,8 @@
 
     .footer-main-left{
         .heading{
-            @apply text-siteDark font-semibold mb-10 max-w-[453px];
+            @apply text-siteDark font-semibold mb-10;
+            max-width: 453px;
             font-size: 48px;
             line-height: 1.2;
         }
@@ -31,19 +32,23 @@
         }
 
         .line{
-            @apply max-w-[268px] h-[1px] bg-black opacity-[0.08] mb-4;
+            @apply bg-black mb-4;
+            max-width: 268px;
+            height: 1px;
+            opacity: 0.08;
         }
 
         .address{
-            @apply max-w-[207px] font-medium;
-            font-size: 14px
+            @apply font-medium;
+            font-size: 14px;
+            max-width: 207px;
         }
     }
 
     .footer-main-right{
         @apply flex flex-col justify-between gap-5;
         .footer-main-links{
-            @apply grid grid-cols-3;
+            @apply grid grid-cols-3 lsm:grid-cols-1 lsm:gap-8;
 
             .site-links{
                 @apply flex flex-col gap-3;
@@ -55,10 +60,6 @@
 
             .bold{
                 @apply font-semibold;
-            }
-
-            @media screen and (max-width: 425px) {
-                @apply grid-cols-1 gap-8;
             }
         }
 
@@ -80,20 +81,11 @@
         @apply flex items-center justify-between py-5;
 
         .footer-bottom-right{
-            @apply flex items-center gap-4;
-            @media screen and (max-width: 425px) {
-                @apply order-2;
-            }
-            @media screen and (max-width: 320px) {
-                @apply flex-col;
-            }
+            @apply flex items-center gap-4 lsm:order-2 xsm:flex-col;
         }
 
         .socials{
-            @apply flex items-center gap-3;
-            @media screen and (max-width: 425px) {
-                @apply order-1;
-            }
+            @apply flex items-center gap-3 lsm:order-1;
         }
 
         @media screen and (max-width: 425px) {
@@ -102,6 +94,6 @@
     }
 
     img{
-        @apply h-[24.3px];
+        height: 24.3px;
     }
 }

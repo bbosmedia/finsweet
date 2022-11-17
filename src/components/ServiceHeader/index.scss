@@ -13,7 +13,8 @@
 
 .service-header-left{
     p{
-        @apply text-siteDark opacity-60 max-w-[624px] block my-6;
+        @apply text-siteDark opacity-60 block my-6;
+        max-width: 624px;
     }
 }
 

@@ -1,5 +1,5 @@
 .home-about-top{
-    @apply flex gap-[20px] justify-between;
+    @apply flex gap-5 justify-between;
 
     & .section-title{
         max-width: 640px;
@@ -15,50 +15,30 @@
 }
 
 .home-about-images{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 11px;
-    padding-right: 18px;
-    position: relative;
-    margin-top: 48px;
-
+    @apply grid grid-cols-3 gap-3 pr-4 mt-12 relative md:grid-cols-1 md:pr-0 md:mt-5;
     &::before{
-        @apply absolute right-0 top-0 h-full w-[18px];
+        @apply absolute right-0 top-0 h-full md:hidden;
+        width: 18px;
         content: '';
         background: linear-gradient(180deg,  #FFA155 0%, #FFA155 25%, #FFE6D2 25%, #FFE6D2 75%, #444CFC 75%, #444CFC 100%);
         z-index: -1;
     }
 
     & img{
-        @apply w-full h-[400px] object-cover;
-    }
-
-    @media screen and (max-width: 768px) {
-        @apply pr-0 mt-5;
-        grid-template-columns: 1fr;
-        
-        &::before{
-            display: none;
-        }
+        @apply w-full object-cover;
+        height: 400px;
     }
 }
 
 .home-about-footer{
-    @apply flex justify-between items-center mt-[48px] gap-5;
-
-    @media screen and (max-width: 768px) {
-        @apply flex-col;
-    }
+    @apply flex justify-between items-center mt-12 gap-5 md:flex-col;
 }
 
 .home-about-footer-cards{
-    @apply flex items-center max-w-[634px] justify-between w-full gap-3;
+    @apply flex items-center max-w-[634px] justify-between w-full gap-3 lsm:grid lsm:grid-cols-2;
 
     @media screen and (max-width: 900px) {
         @apply flex-wrap;
-    }
-    @media screen and (max-width: 425px) {
-        @apply grid grid-cols-2;
     }
 }
 
@@ -69,12 +49,15 @@
     }
 
     .line{
-        @apply w-[72px] h-[6px] mb-[4px];
+        @apply mb-1;
+        width: 72px;
+        height: 6px;
         background: linear-gradient(90deg,  #FFA155 0%, #FFA155 25%, #FFE6D2 25%, #FFE6D2 75%, #444CFC 75%, #444CFC 100%);
     }
 
     p{
-        @apply font-normal text-[16px];
+        @apply font-normal;
+        font-size: 16px;
         line-height: 24px;
     }
 }

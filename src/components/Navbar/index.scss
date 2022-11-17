@@ -5,7 +5,8 @@
 }
 
 .navbar-inner {
-	@apply flex items-center justify-between h-[80px];
+	@apply flex items-center justify-between;
+	height: 80px
 }
 
 .nav-list{
@@ -13,7 +14,8 @@
 	transition: 0.4s ease-in-out;
 
 	@media screen and (max-width: 900px) {
-		@apply absolute top-[80px] left-0 bg-darkBlue flex-col py-5 w-full gap-[20px];
+		@apply absolute left-0 bg-darkBlue flex-col py-5 w-full gap-5;
+		top: 80px;
 		height: calc(100% - 80px);
 		transform: translateX(-100%);
 
@@ -39,7 +41,7 @@
 	}
 
 	&.live{
-		@apply flex items-center gap-[5px];
+		@apply flex items-center gap-1;
 		color: #FFA155;
 		opacity: 1;
 	}
@@ -50,7 +52,9 @@
 }
 
 .toggle-nav-btn{
-	@apply border-none text-white text-[24px] h-[80px] outline-none hidden;
+	@apply border-none text-white outline-none hidden;
+	font-size: 24px;
+	height: 80px;
 
 	@media screen and (max-width: 990px) {
 		@apply block;

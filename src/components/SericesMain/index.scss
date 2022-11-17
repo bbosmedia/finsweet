@@ -17,11 +17,11 @@
     @apply flex gap-5 justify-between items-center;
 
     .content{
-        @apply max-w-[624px];
+        max-width: 624px;
     }
 
     img{
-        @apply max-w-[515px];
+        max-width: 515px;
     }
 
     @media screen and (max-width: 1024px) {

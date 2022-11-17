@@ -3,15 +3,19 @@
 }
 
 .company-vacancies-inner{
-    @apply bg-lightBlue p-[72px] grid grid-cols-3 gap-[32px] lg:grid-cols-2 md:grid-cols-1 md:p-6 xlsm:p-4 xlsm:gap-4;
+    @apply bg-lightBlue grid grid-cols-3 lg:grid-cols-2 md:grid-cols-1 md:p-6 xlsm:p-4 xlsm:gap-4;
+    padding: 72px;
+    gap: 32px;
 
     .vacancy-name{
-        @apply font-semibold mb-3 text-siteDark leading-7 text-[16px];
+        @apply font-semibold mb-3 text-siteDark leading-7;
+        font-size: 16px
 
     }
 
     .vacancy-time, .vacancy-salary{
-        @apply text-[16px] leading-4 text-siteDark opacity-60 mb-1;
+        @apply leading-4 text-siteDark opacity-60 mb-1;
+        font-size: 16px;
     }
 }
 
@@ -19,6 +23,7 @@
     @apply flex items-center gap-4 mt-12;
 
     span{
-        @apply text-main text-[16px] font-medium;
+        @apply text-main font-medium;
+        font-size: 16px;
     }
 }

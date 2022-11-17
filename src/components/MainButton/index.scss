@@ -1,7 +1,8 @@
 .main-btn {
-	@apply font-medium text-[16px] text-white py-[20px] px-[32px] relative flex items-center gap-[10px];
+	@apply font-medium text-white py-5 px-8 relative flex items-center bg-main;
+	font-size: 16px;
+	gap: 10px;
 	line-height: 24px;
-    background: #444CFC;
 	width: fit-content;
 	transition: 0.4s ease-in-out;
 

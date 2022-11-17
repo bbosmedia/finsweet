@@ -1,13 +1,14 @@
 .home-expertice-inner{
-    @apply flex gap-[20px] justify-between;
+    @apply flex gap-[20px] justify-between md:flex-col;
 
     @media screen and (max-width: 768px) {
-        @apply flex-col gap-[30px];
+        gap: 30px;
     }
 }
 
 .home-expertice-inner .left{
-    @apply max-w-[624px] w-[50%];
+    width: 50%;
+    max-width: 624px;
 
     .section-title{
         margin-bottom: 24px;
@@ -23,15 +24,17 @@
 }
 
 .home-expertice-inner .cards{
-    @apply max-w-[515px] w-[50%] flex flex-col gap-[12px] relative;
+    @apply flex flex-col gap-3 relative;
+    width: 50%;
+    max-width: 515px;
 
     &::before{
-        @apply absolute bottom-[-8px] left-0 w-full h-[8px];
+        @apply absolute -bottom-2 left-0 w-full h-2;
         content: '';
         background: linear-gradient(90deg,  #FFA155 0%, #FFA155 25%, #FFE6D2 25%, #FFE6D2 75%, #444CFC 75%, #444CFC 100%);
     }
     &::after{
-        @apply absolute top-[-16px] left-0 w-[16px] h-[16px] bg-main;
+        @apply absolute -top-4 left-0 w-4 h-4 bg-main;
         content: '';
         @media screen and (max-width: 375px) {
             @apply hidden;
@@ -39,7 +42,7 @@
     }
 
     .card{
-        @apply bg-white flex p-[32px] gap-[16px] w-full;
+        @apply bg-white flex p-8 gap-4 w-full;
 
         img{
             height: 47px;
@@ -47,12 +50,15 @@
         }
 
         h5{
-            @apply font-semibold font-[16px] mb-2;
+            @apply font-semibold mb-2;
+            font-size: 16px;
             line-height: 28px;
         }
 
         p{
-            @apply max-w-[303px] font-medium font-[14px] w-full;
+            @apply font-medium w-full;
+            max-width: 303px;
+            font-size: 14px;
             color: #5D5F6D;
         }
 

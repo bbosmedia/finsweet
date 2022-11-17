@@ -2,7 +2,7 @@
     @apply pt-24;
 
     .section-title{
-        @apply max-w-[664px];
+        max-width: 664px;
     }
 
     @media screen and (max-width: 425px) {
@@ -18,7 +18,8 @@
 }
 
 .company-header-text{
-    @apply max-w-[719px] mt-6 mb-16;
+    @apply mt-6 mb-16;
+    max-width: 719px;
     @media screen and (max-width: 425px) {
         @apply mb-6;
     }
@@ -28,7 +29,9 @@
     @apply grid grid-cols-3 relative gap-3;
 
     &::before{
-        @apply h-[24px] w-full max-w-[346px] absolute -top-6 right-5;
+        @apply w-full absolute -top-6 right-5;
+        height: 24px;
+        max-width: 346px;
         background: linear-gradient(90deg,  #FFA155 0%, #FFA155 25%, #FFE6D2 25%, #FFE6D2 75%, #444CFC 75%, #444CFC 100%);
         content: '';
         @media screen and (max-width: 425px) {

@@ -9,11 +9,12 @@
 
     .content{
         .box{
-            @apply h-[16px] w-[16px] bg-main mb-4;
+            @apply h-4 w-4 bg-main mb-4;
         }
 
         .section-title{
-            @apply max-w-[492px] mb-4;
+            @apply mb-4;
+            max-width: 492px;
         }
 
         .bolder{
@@ -23,7 +24,8 @@
         }
 
         .text{
-            @apply max-w-[492px] mb-6 block;
+            @apply mb-6 block;
+            max-width: 492px;
             color: #232536;
             opacity: 0.87;
         }

@@ -2,7 +2,8 @@
 
 .company-logos{
     .container{
-        @apply bg-lightGrey flex items-center gap-[32px] justify-between px-16;
+        @apply bg-lightGrey flex items-center justify-between px-16;
+        gap: 32px;
         overflow-x: scroll;
 
         &::-webkit-scrollbar {
@@ -14,7 +15,8 @@
           }
 
         img{
-            @apply h-[104px] w-[186px];
+            height: 104px;
+            width: 186px;
         }
 
         @media screen and (max-width: 425px) {

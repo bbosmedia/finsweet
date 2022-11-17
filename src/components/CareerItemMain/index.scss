@@ -6,7 +6,8 @@
             @apply bg-lightBlue;
 
             .heading{
-                @apply flex justify-center items-center gap-[95px] md:justify-between px-6 md:gap-9;
+                @apply flex justify-center items-center md:justify-between px-6 md:gap-9;
+                gap: 95px;
                 border-bottom: 4px solid #E0F1F2;
                 overflow-x: scroll;
                 &::-webkit-scrollbar{
@@ -14,22 +15,30 @@
                 }
 
                 .heading-btn{
-                    @apply pt-[43px] pb-[33px] -mb-1 text-[24px] leading-6 font-semibold lsm:text-[18px] lsm:pt-6 lsm:pb-6;
+                    @apply -mb-1 leading-6 font-semibold lsm:pt-6 lsm:pb-6;
+                    padding-top: 43px;
+                    padding-bottom: 33px;
+                    font-size: 24px;
                     border-bottom: 4px solid #E0F1F2;
                     transition: 0.4s ease-in-out;
 
                     &:hover, &.active{
                         @apply text-main border-b-main;
                     }
+
+                    @media screen and (max-width:425px) {
+                        font-size: 18px;
+                    }
                 }
             }
 
             .body{
-                @apply py-[129px] px-8 flex items-center justify-center xsm:px-6 md:py-12;
+                @apply flex items-center justify-center xsm:px-6 md:py-12;
+                padding: 129px 32px;
 
                 ul{
-                    @apply max-w-[842px] flex flex-col gap-5 xlsm:gap-3;
-
+                    @apply flex flex-col gap-5 xlsm:gap-3;
+                    max-width: 842px;
                     list-style: disc;
                 }
             }

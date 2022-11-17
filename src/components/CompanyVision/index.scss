@@ -1,18 +1,16 @@
 .company-vision{
 
     .section-title{
-        @apply max-w-[701px];
+        max-width: 701px;
     }
 
     img{
-        @apply w-full min-h-[200px] object-cover;
+        @apply w-full object-cover;
+        min-height: 200px;
     }
 }
 
 .company-vison-text{
-    @apply max-w-[622px] opacity-60 mt-6 mb-16 block;
-
-    @media screen and (max-width:425px) {
-        @apply mb-6;
-    }
+    @apply opacity-60 mt-6 mb-16 block lsm:mb-6;
+    max-width: 622px;
 }

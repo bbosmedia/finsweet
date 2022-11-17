@@ -1,13 +1,14 @@
 .home-header {
-	@apply bg-darkBlue pt-[96px] pb-[32px];
+	@apply bg-darkBlue pb-8;
+	padding-top: 96px;
 
 	@media screen and (max-width: 425px) {
-		@apply pt-[30px];
+		padding-top: 30px;
 	}
 }
 
 .home-header-inner{
-	@apply flex gap-[20px] items-center justify-between;
+	@apply flex gap-5 items-center justify-between;
 
 	& > img{
 		max-width: 563px;
@@ -15,7 +16,8 @@
 	}
 
 	@media screen and (max-width: 768px) {
-		@apply flex-col gap-[50px];
+		@apply flex-col;
+		gap: 50px;
 
 		& > img{
 			width: 100%;
@@ -55,7 +57,7 @@
 }
 
 .home-header-footer{
-	@apply flex items-center gap-[32px] justify-between;
+	@apply flex items-center gap-8 justify-between;
 	overflow-x: scroll;
 	margin-top: 20px;
 
@@ -65,7 +67,8 @@
 	}
 
 	& > div span{
-		@apply text-white opacity-60 font-medium mb-[2px];
+		@apply text-white opacity-60 font-medium;
+		margin-bottom: 2px;
 		font-size: 14px;
 		line-height: 20px;
 	}

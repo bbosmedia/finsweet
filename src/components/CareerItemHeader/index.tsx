@@ -1,6 +1,6 @@
 import React from 'react'
-import MainButton from '../MainButton'
 import './index.scss'
+import MainButton from '../MainButton'
 
 const CareerItemHeader = () => {
   return (

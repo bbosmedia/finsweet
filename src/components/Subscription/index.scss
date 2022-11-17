@@ -5,11 +5,12 @@
 } 
 
 .subscription-inner{
-    @apply relative p-24 relative;
+    @apply relative p-24 relative lsm:py-10 lsm:px-6;
     background: #666DFF;
 
     &::before{
-        @apply absolute top-0 right-0 h-full w-[24px];
+        @apply absolute top-0 right-0 h-full;
+        width: 24px;
         background: linear-gradient(180deg,  #FFA155 0%, #FFA155 25%, #FFE6D2 25%, #FFE6D2 75%, #444CFC 75%, #444CFC 100%);
         content: '';
 
@@ -19,21 +20,18 @@
     }
 
     & > div{
-        @apply grid grid-cols-2 items-center justify-between;
+        @apply grid grid-cols-2 items-center justify-between md:grid-cols-1 md:gap-8;
 
         h3{
-            @apply font-semibold text-white max-w-[488px] gap-5;
+            @apply font-semibold text-white gap-5;
+            max-width: 488px;
             font-size: 36px;
             line-height: 54px;
 
             @media screen and (max-width: 425px) {
                 font-size: 24px;
-            line-height: 1.4;
+                line-height: 1.4;
             }
-        }
-
-        @media screen and (max-width: 768px) {
-            @apply grid-cols-1 gap-8;
         }
     }
 
@@ -42,21 +40,16 @@
     }
 
     .angle{
-        @apply absolute top-0 left-0 h-[99px];
-        @media screen and (max-width: 425px) {
-            @apply hidden;
-        }
+        @apply absolute top-0 left-0 lsm:hidden;
+        height: 99px;
     }
 
     form{
         width: 100%;
 
         input{
-            @apply border-none outline-none bg-white w-full p-5 max-w-[488px];
+            @apply border-none outline-none bg-white w-full p-5;
+            max-width: 488px;
         }
-    }
-
-    @media screen and (max-width: 425px) {
-        @apply py-10 px-6;
     }
 }

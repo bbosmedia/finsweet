@@ -1,10 +1,11 @@
 .company-meet{
     .section-title{
-        @apply max-w-[624px];
+        max-width: 624px
     }
 
     .company-meet-text{
-        @apply max-w-[505.5px] opacity-60 mt-6 mb-16;
+        @apply opacity-60 mt-6 mb-16;
+        max-width: 505.5px;
 
         @media screen and (max-width: 425px) {
             @apply mb-6;
@@ -15,8 +16,9 @@
         @apply grid grid-cols-4 relative;
 
         .card{
-            @apply relative h-[320px] w-full;
+            @apply relative w-full;
             overflow: hidden;
+            height: 320px;
             img{
                 @apply h-full w-full;
             }

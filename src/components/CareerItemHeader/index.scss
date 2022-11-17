@@ -1,16 +1,14 @@
-.career-item-header{
-    .container{
-        @apply max-w-[1100px];
+    .career-item-header > .container{
+        max-width: 110px;
 
         .inner{
             @apply grid grid-cols-2 gap-5 md:grid-cols-1;
 
-            .left{
-                p{
-                    @apply max-w-[430px] opacity-90 mb-10;
+            .left p{
+                    @apply opacity-90 mb-10;
+                    max-width: 430px;
                 }
-            }
-
+            
             .right{
                 @apply bg-siteOrange relative p-20 flex flex-col gap-6 lsm:p-5 sm:gap-3;
 
@@ -19,9 +17,9 @@
                 }
 
                 h5{
-                    @apply font-semibold text-[24px] leading-9;
+                    @apply font-semibold leading-9;
+                    font-size: 24px;
                 }
             }
         }
     }
-}

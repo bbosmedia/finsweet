@@ -1,43 +1,43 @@
 .home-process{
 
     .section-title{
-        @apply max-w-[733px] mb-4;
+        @apply mb-4;
+        max-width: 733px;
     }
 
     .section-text{
-        @apply max-w-[642px];
+        max-width: 642px
     }
 
     .cards{
-        @apply grid gap-12 mt-[68px] grid-cols-3;
+        @apply grid gap-12 grid-cols-3 lg:grid-cols-2 md:grid-cols-1 md:gap-6 md:mt-5;
+        margin-top: 68px;
 
         .card{
-            @apply border p-8 relative;
+            @apply border p-8 relative lsm:p-4;
 
             &:nth-child(1)::before, &:nth-last-child(1)::before{
-                @apply absolute left-0 bottom-[-8px] h-[8px] w-full;
+                @apply absolute left-0 -bottom-2 w-full;
+                height: 8px;
                 content: '';
                 background: linear-gradient(90deg,  #FFA155 0%, #FFA155 25%, #FFE6D2 25%, #FFE6D2 75%, #444CFC 75%, #444CFC 100%);
             }
 
             &:nth-last-child(1)::before{
-                @apply top-[-8px];
+                @apply -top-2;
             }
 
             .card-inner{
-                @apply flex gap-4;
+                @apply flex gap-4 lsm:flex-col;
 
                 img{
-                    @apply h-[47px] w-[47px];
+                    width: 47px;
+                    height: 47px;
                 }
 
                 p{
                     @apply opacity-60;
                     color: #232536;
-                }
-
-                @media screen and (max-width: 425px) {
-                    @apply flex-col;
                 }
             }
 
@@ -52,20 +52,6 @@
                 @apply font-semibold;
                 line-height: 28px;
             }
-
-            @media screen and (max-width: 425px) {
-                @apply p-4;
-            }
-        }
-
-        @media screen and (max-width: 1100px) {
-            @apply grid-cols-2;
-        }
-        @media screen and (max-width: 768px) {
-            @apply grid-cols-1;
-        }
-        @media screen and (max-width: 425px) {
-            @apply gap-6 mt-5;
         }
     }
 }
