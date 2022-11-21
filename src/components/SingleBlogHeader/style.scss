@@ -1,0 +1,40 @@
+.single-blog-header{
+
+    .btn-shape{
+        @apply top-0 right-0 rotate-90 absolute md:hidden;
+    }
+
+    .section-title{
+        @apply mb-6 md:mb-4;
+        max-width: 729px;
+    }
+
+    .section-text{
+        @apply block mb-8 md:mb-3;
+        max-width: 719px;
+    }
+
+    .user{
+        @apply flex items-center gap-3;
+
+        img{
+            height: 32px;
+        }
+
+        .info{
+            @apply flex items-center gap-3 md:flex-col md:items-start md:gap-0;
+
+            .name{
+                @apply pr-3;
+                border-right: 1px solid rgba(0,0,0,0.2);
+                @media screen and (max-width: 768px) {
+                    border-right: none;
+                }
+            }
+
+            .date{
+                @apply text-siteDark opacity-60;
+            }
+        }
+    }
+}

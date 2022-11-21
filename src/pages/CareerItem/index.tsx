@@ -1,13 +1,14 @@
 import React from 'react'
-import { CareerItemHeader, CareerItemMain } from '../../components'
+import { CareerItemApply, CareerItemHeader, CareerItemMain } from '../../components'
 
 const CareerItem = () => {
-  return (
-    <main className='career-item-page'>
-      <CareerItemHeader />
-      <CareerItemMain />
-    </main>
-  )
+	return (
+		<main className='career-item-page'>
+			<CareerItemHeader />
+			<CareerItemMain />
+			<CareerItemApply />
+		</main>
+	)
 }
 
 export default CareerItem

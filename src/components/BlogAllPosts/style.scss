@@ -1,0 +1,53 @@
+.blog-all-posts{
+    @apply bg-lightGrey;
+
+    .blog-all-posts-inner{
+        @apply grid grid-cols-3 gap-8 mt-16 lg:grid-cols-2 lg:gap-4 md:grid-cols-1 md:mt-6;
+    }
+
+    .card{
+
+        .card-top{
+            img{
+                @apply w-full h-auto;
+            }
+        }
+
+        .card-body{
+            @apply bg-white p-8 md:p-4;
+
+            .card-title{
+                @apply font-semibold mb-4;
+                font-size: 24px;
+                line-height: 36px;
+
+                @media screen and (max-width:425px) {
+                    font-size: 18px;
+                    line-height: 1.4;
+                }
+            }
+
+            .card-text{
+                @apply opacity-90 mb-6;
+
+                @media screen and (max-width:425px) {
+                    font-size: 16px;
+                }
+            }
+
+            .card-auth{
+                @apply flex items-center gap-4;
+
+                img{
+                    height: 32px;
+                    width: 32px;
+                }
+
+                .date{
+                    @apply opacity-60;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

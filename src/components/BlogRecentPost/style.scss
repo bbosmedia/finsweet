@@ -1,0 +1,56 @@
+.blog-recent-posts{
+    @apply pb-24 md:pb-6;
+
+    .section-title{
+        @apply mb-16 md:mb-6;
+    }
+
+    .blog-recent-posts-cards{
+        @apply grid grid-cols-2 gap-8 md:grid-cols-1;
+
+        .card{
+            @apply grid grid-cols-2 gap-0 lg:grid-cols-1;
+
+            .card-img{
+                @apply w-full h-full;
+
+                img{
+                    @apply h-full w-full object-cover;
+                }
+            }
+
+            .card-content{
+                @apply bg-lightGrey p-8 w-full md:p-4;
+
+                .card-title{
+                    @apply font-semibold mb-8 md:mb-4;
+                    font-size: 24px;
+                    line-height: 30px;
+
+                    @media screen and (max-width:425px) {
+                        font-size: 18px;
+                        line-height: 1.4;
+                    }
+                }
+
+                .user{
+                    @apply flex gap-3 items-center;
+
+                    img{
+                        height: 32px;
+                    }
+
+                    .name{
+                        font-size: 16px;
+                        line-height: 24px;
+                    }
+
+                    .date{
+                        @apply opacity-60;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}

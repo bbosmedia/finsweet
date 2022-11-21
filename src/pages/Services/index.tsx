@@ -4,7 +4,7 @@ import { HomeProcess, ServiceHeader, ServicesMain } from '../../components'
 
 const Services = () => {
 	return (
-		<main className="services-page">
+		<main className='services-page'>
 			<ServiceHeader />
 			<HomeProcess />
 			<ServicesMain />

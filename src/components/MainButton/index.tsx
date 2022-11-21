@@ -10,8 +10,12 @@ interface IMainButton {
 
 const MainButton: FC<IMainButton> = ({ link, text }) => {
 	return (
-		<Link to={link} className="main-btn">
-			<img className="angle" alt="Abbos Nurgulshanov" src={require('../../assets/images/btn-shape.png')} />
+		<Link to={link} className='main-btn'>
+			<img
+				className='angle'
+				alt='Abbos Nurgulshanov'
+				src={require('../../assets/images/btn-shape.png')}
+			/>
 			<span>{text}</span>
 			<BsArrowRight />
 		</Link>

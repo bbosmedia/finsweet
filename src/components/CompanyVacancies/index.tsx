@@ -6,15 +6,15 @@ import './index.scss'
 
 const CompanyVacancies = () => {
 	return (
-		<section className="company-vacancies">
-			<div className="container">
-				<div className="company-vacancies-inner">
+		<section className='company-vacancies'>
+			<div className='container'>
+				<div className='company-vacancies-inner'>
 					{dataVacancies.map((item, index) => (
-						<div key={index} className="card bg-white p-12 sm:p-4">
-							<h5 className="vacancy-name">{item.name}</h5>
-							<p className="vacancy-time">{item.time}</p>
-							<p className="vacancy-salary">{item.salary}</p>
-							<Link className="vacancy-link" to={item.link}>
+						<div key={index} className='card bg-white p-12 sm:p-4'>
+							<h5 className='vacancy-name'>{item.name}</h5>
+							<p className='vacancy-time'>{item.time}</p>
+							<p className='vacancy-salary'>{item.salary}</p>
+							<Link className='vacancy-link' to={item.link}>
 								<span>Apply Now</span> <BsArrowRight />
 							</Link>
 						</div>

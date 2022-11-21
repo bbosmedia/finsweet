@@ -1,0 +1,36 @@
+.apply-now{
+    .section-title{
+        @apply mb-7 lsm:mb-4;
+    }
+
+    .input-groups{
+        @apply grid grid-cols-2 gap-8 mb-8 md:grid-cols-1 lsm:gap-4 lsm:mb-4;
+    }
+
+    .error{
+        @apply text-red-500 font-light mt-1;
+    }
+
+    .checkbox {
+        @apply flex gap-6 mt-8 lsm:mt-4;
+
+        .checkbox-text {
+            max-width: 842px;
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        input{
+            height: 36px;
+            width: 36px;
+        }
+    }
+}
+
+.apply-now-input{
+    @apply py-8 px-10 w-full bg-lightGrey font-medium text-siteDark border-0 outline-none inline-block lsm:py-2 lsm:px-3 lsm:font-normal;
+
+    &::placeholder{
+        @apply text-siteDark opacity-80;
+    }
+}

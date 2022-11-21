@@ -9,11 +9,11 @@ interface ICard {
 
 const Card: FC<ICard> = ({ order, img, text, title }) => {
 	return (
-		<div className="card">
-			<span className="number">0{order}</span>
-			<div className="card-inner">
+		<div className='card'>
+			<span className='number'>0{order}</span>
+			<div className='card-inner'>
 				<img src={img} alt={title} />
-				<div className="content">
+				<div className='content'>
 					<h6>{title}</h6>
 					<p>{text}</p>
 				</div>
