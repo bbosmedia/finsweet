@@ -11,9 +11,11 @@ const BlogTrending = () => {
 					<div className='left'>
 						<div className='orange-box'></div>
 						<h5 className='section-name'>Trending</h5>
-						<h2 className='section-title'>
-							Breaking the code How did we build our Figma plugin
-						</h2>
+						<Link to='/blog/1'>
+							<h2 className='section-title'>
+								Breaking the code How did we build our Figma plugin
+							</h2>
+						</Link>
 						<p className='section-text'>
 							It is a long established fact that a reader will be distracted by
 							the readable content of a page when looking at its layout. The
@@ -24,11 +26,15 @@ const BlogTrending = () => {
 						</Link>
 						<div className='post-info'>
 							<div className='user'>
-								<img
-									src={require('../../assets/images/home-customers/3.png')}
-									alt=''
-								/>
-								<span className='name'>Andrew Jonson</span>
+								<Link to='/blogger/1'>
+									<img
+										src={require('../../assets/images/home-customers/3.png')}
+										alt=''
+									/>
+								</Link>
+								<Link to='/blogger/1'>
+									<span className='name'>Andrew Jonson</span>
+								</Link>
 							</div>
 							<span className='date'>Posted on 27th January 2021</span>
 						</div>
@@ -40,51 +46,73 @@ const BlogTrending = () => {
 					</div>
 					<div className='right'>
 						<div className='box'>
-                            <img className='btn-shape' src={require("../../assets/images/btn-shape.png")} alt="" />
+							<img
+								className='btn-shape'
+								src={require('../../assets/images/btn-shape.png')}
+								alt=''
+							/>
 							<div className='box-card'>
-								<h3 className='box-card-title'>
-									Great design expectations prejudice in digital products in
-									Next Year
-								</h3>
+								<Link to='/blog/1'>
+									<h3 className='box-card-title'>
+										Great design expectations prejudice in digital products in
+										Next Year
+									</h3>
+								</Link>
 								<div className='user'>
-									<img
-										src={require('../../assets/images/home-customers/3.png')}
-										alt=''
-									/>
+									<Link to='/blogger/1'>
+										<img
+											src={require('../../assets/images/home-customers/3.png')}
+											alt=''
+										/>
+									</Link>
 									<div className='names'>
-										<h6>Andrew Jonson</h6>
+										<Link to='/blogger/1'>
+											<h6>Andrew Jonson</h6>
+										</Link>
 										<span className='date'>Jan 19, 2021</span>
 									</div>
 								</div>
 							</div>
 							<div className='box-card'>
-								<h3 className='box-card-title'>
-									Great design expectations prejudice in digital products in
-									Next Year
-								</h3>
+								<Link to='/blog/1'>
+									<h3 className='box-card-title'>
+										Great design expectations prejudice in digital products in
+										Next Year
+									</h3>
+								</Link>
 								<div className='user'>
-									<img
-										src={require('../../assets/images/home-customers/3.png')}
-										alt=''
-									/>
+									<Link to='/blogger/1'>
+										<img
+											src={require('../../assets/images/home-customers/3.png')}
+											alt=''
+										/>
+									</Link>
 									<div className='names'>
-										<h6>Andrew Jonson</h6>
+										<Link to='/blogger/1'>
+											<h6>Andrew Jonson</h6>
+										</Link>
 										<span className='date'>Jan 19, 2021</span>
 									</div>
 								</div>
 							</div>
 							<div className='box-card'>
-								<h3 className='box-card-title'>
-									Great design expectations prejudice in digital products in
-									Next Year
-								</h3>
+								<Link to='/blog/1'>
+									<h3 className='box-card-title'>
+										Great design expectations prejudice in digital products in
+										Next Year
+									</h3>
+								</Link>
 								<div className='user'>
-									<img
-										src={require('../../assets/images/home-customers/3.png')}
-										alt=''
-									/>
+									<Link to='/blogger/1'>
+										<img
+											src={require('../../assets/images/home-customers/3.png')}
+											alt=''
+										/>
+									</Link>
 									<div className='names'>
-										<h6>Andrew Jonson</h6>
+										<Link to='/blogger/1'>
+											<h6>Andrew Jonson</h6>
+										</Link>
 										<span className='date'>Jan 19, 2021</span>
 									</div>
 								</div>
