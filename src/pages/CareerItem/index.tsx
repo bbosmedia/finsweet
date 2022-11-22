@@ -1,5 +1,5 @@
 import React from 'react'
-import { CareerItemApply, CareerItemHeader, CareerItemMain } from '../../components'
+import { CareerItemApply, CareerItemHeader, CareerItemMain, Subscription } from '../../components'
 
 const CareerItem = () => {
 	return (
@@ -7,6 +7,7 @@ const CareerItem = () => {
 			<CareerItemHeader />
 			<CareerItemMain />
 			<CareerItemApply />
+			<Subscription />
 		</main>
 	)
 }

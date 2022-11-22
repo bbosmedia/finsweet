@@ -2,7 +2,8 @@ import React from 'react'
 import {
 	CareerHeader,
 	CompanyCulture,
-	CompanyVacancies
+	CompanyVacancies,
+	Subscription
 } from '../../components'
 import './index.scss'
 
@@ -12,6 +13,7 @@ const Career = () => {
 			<CareerHeader />
 			<CompanyVacancies />
 			<CompanyCulture />
+			<Subscription />
 		</main>
 	)
 }

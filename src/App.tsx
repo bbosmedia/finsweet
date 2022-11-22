@@ -12,7 +12,6 @@ function App() {
 					<Route key={index} path={route.path} element={<route.element />} />
 				))}
 			</Routes>
-			<Subscription />
 			<Footer />
 		</div>
 	)

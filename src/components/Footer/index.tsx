@@ -16,7 +16,7 @@ import './index.scss'
 
 const Footer = () => {
 	return (
-		<footer className='footer'>
+		<footer className='footer mt-24 md:mt-10 lsm:mt-4'>
 			<div className='container footer-main'>
 				<img src={require('../../assets/images/btn-shape.png')} alt='' />
 				<div className='footer-main-left'>

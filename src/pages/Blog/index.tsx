@@ -1,5 +1,5 @@
 import React from 'react'
-import { BlogAllPosts, BlogRecentPost, BlogTrending } from '../../components'
+import { BlogAllPosts, BlogRecentPost, BlogTrending, Subscription } from '../../components'
 
 const Blog = () => {
 	return (
@@ -7,6 +7,7 @@ const Blog = () => {
 			<BlogTrending />
 			<BlogRecentPost />
 			<BlogAllPosts />
+			<Subscription />
 		</main>
 	)
 }

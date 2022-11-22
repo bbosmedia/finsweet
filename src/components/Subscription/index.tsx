@@ -3,7 +3,7 @@ import './index.scss'
 
 const Subscription = () => {
 	return (
-		<section className='subscription section'>
+		<section className='subscription mt-24 md:mt-10 lsm:mt-4'>
 			<div className='container'>
 				<div className='subscription-inner'>
 					<img
