@@ -18,7 +18,7 @@ const Home = () => {
 			<HomeSerivces />
 			<HomeProcess />
 			<HomeCustomer />
-			<HomeBlogs />
+			<HomeBlogs title='Read our latest blogs & news' />
 		</main>
 	)
 }

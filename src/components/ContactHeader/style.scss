@@ -1,0 +1,84 @@
+.contact-header-inner{
+    grid-template-columns: 1.2fr 1fr;
+    @apply grid gap-5 md:grid-cols-1 md:gap-7;
+
+    .left{
+        .contact-input-groups{
+            @apply gap-6 flex flex-col mt-16 lsm:mt-5;
+            max-width: 405px;
+
+            label{
+                @apply text-siteDark opacity-60 mb-2;
+                font-size: 14px;
+                line-height: 20px;
+            }
+
+            .controller{
+                @apply flex flex-col;
+            }
+
+            .contact-header-input{
+                @apply p-0 pb-2 outline-none border-none;
+                border-bottom: 1px solid rgba(#232536, 0.2);
+            }
+        }
+    }
+
+    .right{
+        @apply bg-main mt-6 ml-6 py-20 bg-opacity-80 relative px-24 text-white lg:px-14 md:mt-0 md:ml-0 lsm:py-6 lsm:px-6;
+
+        &::before{
+            @apply -top-6 right-0 absolute h-6 md:hidden;
+            background: linear-gradient(90deg, #FFD3AF 0%, #FFD3AF 25%, #8389FF 25%, #8389FF 55%, #FFA155 55%, #FFA155 100%);
+            content: '';
+            width: 133px;
+        }
+
+        &::after{
+            @apply -left-6 bottom-0 absolute w-6 md:hidden;
+            background: linear-gradient(180deg, #FFA155 0%, #FFA155 25%, #FFD3AF 25%, #FFD3AF 75%, #3A41DC 75%, #3A41DC 100%);
+            content: '';
+            height: 186px;
+        }
+
+        .content{
+            @apply w-full flex flex-col gap-6 lsm:gap-5;
+            max-width: 280px;
+
+            h5{
+                @apply opacity-60;
+                font-size: 14px
+            }
+            
+            h3{
+                @apply font-medium;
+                font-size: 18px;
+                line-height: 28px;
+            }
+
+            .line{
+                @apply w-full my-3 bg-black;
+                opacity: 0.08;
+                height: 1px;
+            }
+
+            .error{
+                @apply text-red-500 mt-1;
+                font-size: 14px;
+            }
+
+            .socials{
+                @apply flex gap-6 mt-14 lsm:mt-6;
+
+                a{
+                    @apply text-white opacity-60;
+                    transition: 0.4s ease-in-out;
+
+                    &:hover{
+                        @apply opacity-100;
+                    }
+                }
+            }
+        }
+    }
+}

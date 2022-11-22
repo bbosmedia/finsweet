@@ -3,12 +3,12 @@ import { BsArrowRight } from 'react-icons/bs'
 import { Link } from 'react-router-dom'
 import './index.scss'
 
-const HomeBlogs = () => {
+const HomeBlogs = ({title}:{title: string}) => {
 	return (
 		<section className='home-blogs section bg-lightBlue'>
 			<div className='container'>
 				<div className='w-[16px] h-[16px] bg-main mb-5'></div>
-				<h2 className='section-title'>Read our latest blogs & news</h2>
+				<h2 className='section-title'>{title}</h2>
 				<div className='home-blogs-inner'>
 					<div className='blog-card'>
 						<img src={require('../../assets/images/home-blog/1.png')} alt='' />
