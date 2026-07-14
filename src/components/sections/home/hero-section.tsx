@@ -27,9 +27,9 @@ const HeroSection = () => {
 					<span className='text-white/70 font-medium mb-[2px] text-[14px] leading-[20px] block'>
 						Our Clients
 					</span>
-					<h4 className='text-white font-medium leading-[28px]'>
+					<h3 className='text-white font-medium leading-[28px]'>
 						We've Worked with
-					</h4>
+					</h3>
 				</div>
 				<img src='/images/logos/1.webp' alt='' />
 				<img src='/images/logos/2.webp' alt='' />

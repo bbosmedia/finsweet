@@ -13,7 +13,7 @@ const NewsletterForm = () => {
 					/>
 					<div className='grid grid-cols-2 items-center justify-between md:grid-cols-1 md:gap-8'>
 						<div>
-							<p className='font-medium [letter-spacing:3px] uppercase opacity-[0.87] mb-3 text-white'>
+							<p className='font-medium [letter-spacing:3px] uppercase opacity-100 mb-3 text-white'>
 								NEWSLETTER
 							</p>
 							<h3 className='font-semibold text-white max-w-[488px] text-[36px] leading-[54px] lsm:text-[24px] lsm:leading-[1.4]'>

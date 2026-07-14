@@ -39,7 +39,7 @@ const ServicesSection = () => {
 					{services.map(service => (
 						<div key={service.title} className='bg-white p-8'>
 							<img className='mb-4 w-[47px]' src={service.icon} alt='' />
-							<h5 className='font-semibold leading-[28px]'>{service.title}</h5>
+							<h3 className='font-semibold leading-[28px]'>{service.title}</h3>
 							<p className='mb-6 leading-[24px] text-[#4B5563]'>
 								{service.description}
 							</p>

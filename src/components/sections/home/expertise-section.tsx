@@ -50,9 +50,9 @@ const ExpertiseSection = () => {
 						>
 							<img className='h-[47px] w-[47px]' src={item.icon} alt='Icon' />
 							<div>
-								<h5 className='font-semibold mb-2 text-[16px] leading-[28px]'>
+								<h3 className='font-semibold mb-2 text-[16px] leading-[28px]'>
 									{item.title}
-								</h5>
+								</h3>
 								<p className='font-medium w-full max-w-[303px] text-[14px] text-[#4B5563]'>
 									{item.description}
 								</p>

@@ -25,7 +25,7 @@ const ProcessCard: FC<IProcessCard> = ({
 		<div className='border p-8 relative lsm:p-4'>
 			{isFirst && <div className={cn(gradientBar, '-bottom-2')} />}
 			{isLast && <div className={cn(gradientBar, '-top-2')} />}
-			<span className='absolute top-3 right-3 opacity-30 font-semibold text-[24px] leading-[32px] text-darkBlue'>
+			<span className='absolute top-3 right-3 opacity-60 font-semibold text-[24px] leading-[32px] text-darkBlue'>
 				0{order}
 			</span>
 			<div className='flex gap-4 lsm:flex-col'>

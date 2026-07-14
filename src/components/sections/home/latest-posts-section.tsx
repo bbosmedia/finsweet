@@ -35,9 +35,9 @@ const LatestPostsSection = ({ title }: { title: string }) => {
 								<span className='font-medium text-gray-500 mb-2 text-[14px] leading-[20px] text-darkBlue block'>
 									{post.date}
 								</span>
-								<h5 className='font-semibold text-[24px] leading-[36px] text-darkBlue lsm:text-[18px] lsm:leading-[1.4]'>
+								<h3 className='font-semibold text-[24px] leading-[36px] text-darkBlue lsm:text-[18px] lsm:leading-[1.4]'>
 									{post.title}
-								</h5>
+								</h3>
 								<ReadMoreLink to='/' className='mt-6' />
 							</div>
 						</div>
