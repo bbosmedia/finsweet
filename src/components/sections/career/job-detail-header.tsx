@@ -1,5 +1,5 @@
 import React from 'react'
-import PrimaryButton from '../../ui/primary-button'
+import PrimaryButton from '@/components/ui/primary-button'
 
 const JobDetailHeader = () => {
 	return (

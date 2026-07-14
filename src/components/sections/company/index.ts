@@ -1,7 +1,0 @@
-export { default as CompanyHero } from './company-hero'
-export { default as OurStory } from './our-story'
-export { default as BrandLogos } from './brand-logos'
-export { default as VisionStatement } from './vision-statement'
-export { default as TeamSection } from './team-section'
-export { default as OpenPositions } from './open-positions'
-export { default as CultureSection } from './culture-section'

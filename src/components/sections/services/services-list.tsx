@@ -1,6 +1,6 @@
 import React from 'react'
-import { serviceData } from '../../../data/services-list-data'
-import ServiceItem from './service-item'
+import { serviceData } from '@/data/services-list-data'
+import ServiceItem from '@/components/sections/services/service-item'
 
 const ServicesList = () => {
 	return (

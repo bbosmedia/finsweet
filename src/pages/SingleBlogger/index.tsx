@@ -1,5 +1,6 @@
 import React from 'react'
-import { LatestPostsSection, AuthorProfileHeader } from '../../components'
+import AuthorProfileHeader from '@/components/sections/blog/author-profile-header'
+import LatestPostsSection from '@/components/sections/home/latest-posts-section'
 
 const SingleBlogger = () => {
   return (

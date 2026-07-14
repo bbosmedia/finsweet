@@ -1,7 +1,0 @@
-export { default as HeroSection } from './hero-section'
-export { default as AboutSection } from './about-section'
-export { default as ExpertiseSection } from './expertise-section'
-export { default as ServicesSection } from './services-section'
-export { default as ProcessSection } from './process-section'
-export { default as TestimonialsSection } from './testimonials-section'
-export { default as LatestPostsSection } from './latest-posts-section'

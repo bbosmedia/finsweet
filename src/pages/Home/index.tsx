@@ -1,14 +1,12 @@
 import React from 'react'
-import {
-	AboutSection,
-	LatestPostsSection,
-	TestimonialsSection,
-	HeroSection,
-	ProcessSection,
-	ExpertiseSection,
-	ServicesSection,
-	NewsletterForm
-} from '../../components'
+import HeroSection from '@/components/sections/home/hero-section'
+import AboutSection from '@/components/sections/home/about-section'
+import ExpertiseSection from '@/components/sections/home/expertise-section'
+import ServicesSection from '@/components/sections/home/services-section'
+import ProcessSection from '@/components/sections/home/process-section'
+import TestimonialsSection from '@/components/sections/home/testimonials-section'
+import LatestPostsSection from '@/components/sections/home/latest-posts-section'
+import NewsletterForm from '@/components/shared/newsletter-form'
 
 const Home = () => {
 	return (

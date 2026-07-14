@@ -1,5 +1,5 @@
 import React from 'react'
-import TestimonialCard from '../../cards/testimonial-card'
+import TestimonialCard from '@/components/cards/testimonial-card'
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'

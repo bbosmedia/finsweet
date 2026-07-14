@@ -1,5 +1,8 @@
 import React from 'react'
-import { TrendingPosts, RecentPosts, AllPostsGrid, NewsletterForm } from '../../components'
+import TrendingPosts from '@/components/sections/blog/trending-posts'
+import RecentPosts from '@/components/sections/blog/recent-posts'
+import AllPostsGrid from '@/components/sections/blog/all-posts-grid'
+import NewsletterForm from '@/components/shared/newsletter-form'
 
 const Blog = () => {
 	return (

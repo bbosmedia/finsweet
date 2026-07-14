@@ -1,5 +1,8 @@
 import React from 'react'
-import { ServicesHero, ProcessSection, ServicesList, NewsletterForm } from '../../components'
+import ServicesHero from '@/components/sections/services/services-hero'
+import ServicesList from '@/components/sections/services/services-list'
+import ProcessSection from '@/components/sections/home/process-section'
+import NewsletterForm from '@/components/shared/newsletter-form'
 
 const Services = () => {
 	return (

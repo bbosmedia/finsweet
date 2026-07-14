@@ -1,6 +1,6 @@
 import React from 'react'
 import { BsInstagram, BsLinkedin, BsTwitter } from 'react-icons/bs'
-import { companyTeam } from '../../../data/team-data'
+import { companyTeam } from '@/data/team-data'
 
 const TeamSection = () => {
 	return (

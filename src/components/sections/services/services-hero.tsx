@@ -1,8 +1,8 @@
 import React from 'react'
 import { BsArrowRight } from 'react-icons/bs'
 import { Link } from 'react-router-dom'
-import PrimaryButton from '../../ui/primary-button'
-import { serviceHeaderLinks } from '../../../data/services-hero-data'
+import PrimaryButton from '@/components/ui/primary-button'
+import { serviceHeaderLinks } from '@/data/services-hero-data'
 
 const ServicesHero = () => {
 	return (

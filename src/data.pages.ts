@@ -1,5 +1,5 @@
 import React from "react"
-import { Blog, Career, CareerItem, Company, Contact, Home, Services, SingleBlog, SingleBlogger } from "./pages"
+import { Blog, Career, CareerItem, Company, Contact, Home, Services, SingleBlog, SingleBlogger } from "@/pages"
 
 interface IPageItem{
     path: string

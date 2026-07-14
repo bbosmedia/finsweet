@@ -3,7 +3,7 @@ import {
 	Deatils,
 	Requirements,
 	Responsibilities
-} from '../../../data/job-detail-data'
+} from '@/data/job-detail-data'
 
 const JobDetailContent = () => {
 	const [active, setActive] = useState<string>('Details')

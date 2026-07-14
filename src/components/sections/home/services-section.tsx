@@ -1,7 +1,7 @@
 import React from 'react'
 import { BsArrowRight } from 'react-icons/bs'
 import { Link } from 'react-router-dom'
-import PrimaryButton from '../../ui/primary-button'
+import PrimaryButton from '@/components/ui/primary-button'
 
 const ServicesSection = () => {
 	return (

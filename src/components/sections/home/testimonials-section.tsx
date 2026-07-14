@@ -1,5 +1,5 @@
 import React from 'react'
-import TestimonialSlider from './testimonial-slider'
+import TestimonialSlider from '@/components/sections/home/testimonial-slider'
 
 const TestimonialsSection = () => {
 	return (

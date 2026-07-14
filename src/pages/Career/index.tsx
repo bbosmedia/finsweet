@@ -1,10 +1,8 @@
 import React from 'react'
-import {
-	CareerHero,
-	OpenPositions,
-	CultureSection,
-	NewsletterForm
-} from '../../components'
+import CareerHero from '@/components/sections/career/career-hero'
+import OpenPositions from '@/components/sections/company/open-positions'
+import CultureSection from '@/components/sections/company/culture-section'
+import NewsletterForm from '@/components/shared/newsletter-form'
 
 const Career = () => {
 	return (

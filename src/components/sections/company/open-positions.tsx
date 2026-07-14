@@ -1,7 +1,7 @@
 import React from 'react'
 import { BsArrowRight } from 'react-icons/bs'
 import { Link } from 'react-router-dom'
-import { dataVacancies } from '../../../data/vacancies-data'
+import { dataVacancies } from '@/data/vacancies-data'
 
 const OpenPositions = () => {
 	return (
