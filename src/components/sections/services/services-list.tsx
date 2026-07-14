@@ -1,5 +1,5 @@
 import React from 'react'
-import { serviceData } from './services-list-data'
+import { serviceData } from '../../../data/services-list-data'
 import ServiceItem from './service-item'
 
 const ServicesList = () => {

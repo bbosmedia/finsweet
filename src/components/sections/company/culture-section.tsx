@@ -1,5 +1,5 @@
 import React from 'react'
-import { companyCulture } from './culture-data'
+import { companyCulture } from '../../../data/culture-data'
 
 const CultureSection = () => {
 	return (

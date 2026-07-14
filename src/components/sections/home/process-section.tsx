@@ -1,6 +1,6 @@
 import React from 'react'
 import ProcessCard from '../../cards/process-card'
-import { processdata } from './process-data'
+import { processdata } from '../../../data/process-data'
 
 const ProcessSection = () => {
 	return (

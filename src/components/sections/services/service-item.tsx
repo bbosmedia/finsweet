@@ -1,5 +1,5 @@
 import React from 'react'
-import { IServicesData } from './services-list-data'
+import { IServicesData } from '../../../data/services-list-data'
 
 const ServiceItem = ({ item, index }: { item: IServicesData; index: number }) => {
 	const isEven = index % 2 === 1

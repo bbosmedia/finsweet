@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { recentPostsData } from './recent-posts-data'
+import { recentPostsData } from '../../../data/recent-posts-data'
 
 const RecentPosts = () => {
 	return (

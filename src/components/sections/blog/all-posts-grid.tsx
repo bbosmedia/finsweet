@@ -1,5 +1,5 @@
 import React from 'react'
-import { dataAllPosts } from './all-posts-data';
+import { dataAllPosts } from '../../../data/all-posts-data';
 import { Link } from 'react-router-dom';
 
 const AllPostsGrid = () => {
