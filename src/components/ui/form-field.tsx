@@ -1,5 +1,6 @@
 import React from 'react'
 import { Field } from 'formik'
+import { cn } from '@/lib/utils'
 
 interface FormFieldProps {
 	name: string
@@ -18,14 +19,17 @@ const FormField = ({
 	type = 'text',
 	as,
 	rows,
-	className = '',
+	className,
 	error,
 	touched
 }: FormFieldProps) => {
 	return (
 		<div>
 			<Field
-				className={`py-8 px-10 w-full bg-lightGrey font-medium text-siteDark border-0 outline-none inline-block lsm:py-2 lsm:px-3 lsm:font-normal placeholder:text-siteDark placeholder:opacity-80 ${className}`}
+				className={cn(
+					'py-8 px-10 w-full bg-lightGrey font-medium text-siteDark border-0 outline-none inline-block lsm:py-2 lsm:px-3 lsm:font-normal placeholder:text-siteDark placeholder:opacity-80',
+					className
+				)}
 				name={name}
 				placeholder={placeholder}
 				type={type}

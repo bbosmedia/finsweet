@@ -1,4 +1,5 @@
 import React, { type FC } from 'react'
+import { cn } from '@/lib/utils'
 
 interface IProcessCard {
 	order: number
@@ -22,8 +23,8 @@ const ProcessCard: FC<IProcessCard> = ({
 }) => {
 	return (
 		<div className='border p-8 relative lsm:p-4'>
-			{isFirst && <div className={`${gradientBar} -bottom-2`} />}
-			{isLast && <div className={`${gradientBar} -top-2`} />}
+			{isFirst && <div className={cn(gradientBar, '-bottom-2')} />}
+			{isLast && <div className={cn(gradientBar, '-top-2')} />}
 			<span className='absolute top-3 right-3 opacity-30 font-semibold text-[24px] leading-[32px] text-darkBlue'>
 				0{order}
 			</span>

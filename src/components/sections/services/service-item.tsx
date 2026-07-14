@@ -1,5 +1,6 @@
 import React from 'react'
 import Container from '@/components/ui/container'
+import { cn } from '@/lib/utils'
 import type { IServicesData } from '@/data/services-list-data'
 
 const ServiceItem = ({
@@ -18,9 +19,10 @@ const ServiceItem = ({
 		>
 			<Container className='flex gap-5 justify-between items-center lg:flex-col'>
 				<div
-					className={`max-w-[624px] lg:w-full lg:max-w-none ${
-						isEven ? 'order-2 lg:order-1' : ''
-					}`}
+					className={cn(
+						'max-w-[624px] lg:w-full lg:max-w-none',
+						isEven && 'order-2 lg:order-1'
+					)}
 				>
 					<h4 className='text-siteDark opacity-90 font-semibold mb-4 text-[24px] leading-[36px] lsm:mb-3 lsm:text-[18px] lsm:leading-[1.4]'>
 						{item.name}
@@ -31,9 +33,10 @@ const ServiceItem = ({
 					<p className='text-gray-500'>{item.text}</p>
 				</div>
 				<img
-					className={`max-w-[515px] lg:w-full lg:max-w-none ${
-						isEven ? 'order-1 lg:order-2' : ''
-					}`}
+					className={cn(
+						'max-w-[515px] lg:w-full lg:max-w-none',
+						isEven && 'order-1 lg:order-2'
+					)}
 					src={item.img}
 					alt={item.name}
 				/>

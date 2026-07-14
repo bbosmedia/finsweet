@@ -1,4 +1,5 @@
 import React from 'react'
+import { cn } from '@/lib/utils'
 
 interface SectionHeadingProps {
 	subtitle: string
@@ -11,7 +12,7 @@ const SectionHeading = ({
 	subtitle,
 	title,
 	variant = 'dark',
-	className = ''
+	className
 }: SectionHeadingProps) => {
 	const subtitleColor = variant === 'white' ? 'text-white' : 'text-black'
 	const titleColor = variant === 'white' ? 'text-white' : 'text-darkBlue'
@@ -19,12 +20,18 @@ const SectionHeading = ({
 	return (
 		<div className={className}>
 			<span
-				className={`font-medium [letter-spacing:3px] uppercase opacity-[0.87] mb-4 block ${subtitleColor}`}
+				className={cn(
+					'font-medium [letter-spacing:3px] uppercase opacity-[0.87] mb-4 block',
+					subtitleColor
+				)}
 			>
 				{subtitle}
 			</span>
 			<h2
-				className={`font-semibold text-[48px] leading-[1.2] max-[425px]:text-[32px] max-[320px]:text-[27px] ${titleColor}`}
+				className={cn(
+					'font-semibold text-[48px] leading-[1.2] max-[425px]:text-[32px] max-[320px]:text-[27px]',
+					titleColor
+				)}
 			>
 				{title}
 			</h2>

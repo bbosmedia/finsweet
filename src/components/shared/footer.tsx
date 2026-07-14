@@ -106,7 +106,11 @@ const Footer = () => {
 				<div className='max-w-[1320px] w-full px-5 mx-auto flex items-center justify-between py-5 lsm:flex-col lsm:gap-7'>
 					<div className='flex items-center gap-4 lsm:order-2 xsm:flex-col'>
 						<Link to='/'>
-							<img className='h-[24.3px]' src='/images/Logo-black.webp' alt='' />
+							<img
+								className='h-[24.3px]'
+								src='/images/Logo-black.webp'
+								alt=''
+							/>
 						</Link>
 						<p>&copy; {new Date().getFullYear()} Finsweet</p>
 					</div>

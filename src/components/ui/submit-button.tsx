@@ -1,5 +1,6 @@
 import React from 'react'
 import { BsArrowRight } from 'react-icons/bs'
+import { cn } from '@/lib/utils'
 
 interface SubmitButtonProps {
 	label: string
@@ -10,12 +11,12 @@ interface SubmitButtonProps {
 const SubmitButton = ({
 	label,
 	type = 'submit',
-	className = ''
+	className
 }: SubmitButtonProps) => {
 	return (
 		<button
 			type={type}
-			className={`bg-main px-8 py-5 relative text-white mt-14 ${className}`}
+			className={cn('bg-main px-8 py-5 relative text-white mt-14', className)}
 		>
 			<img
 				className='absolute top-0 left-0'
