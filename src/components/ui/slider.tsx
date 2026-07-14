@@ -36,10 +36,8 @@ const Slider = ({ children, dots = true, autoPlay = true, interval = 3000 }: Sli
 			{dots && total > 1 && (
 				<div className='flex justify-center gap-2 mt-4'>
 					{items.map((_, i) => (
-						<button
+						<div
 							key={i}
-							aria-label={`Go to slide ${i + 1}`}
-							onClick={() => setCurrent(i)}
 							className={cn(
 								'w-2 h-2 rounded-full transition-colors',
 								i === current ? 'bg-main' : 'bg-gray-300'

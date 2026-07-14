@@ -1,0 +1,29 @@
+# Finsweet
+
+> Finsweet is a web development agency website showcasing services, company information, career opportunities, and blog content. Built with React, TypeScript, Vite, and Tailwind CSS.
+
+## Services
+
+- [Technical Support](https://finsweet1.netlify.app/services): Expert technical support solutions for your business
+- [Development](https://finsweet1.netlify.app/services): Custom web development services
+- [Testing Management](https://finsweet1.netlify.app/services): Quality assurance and testing services
+
+## Company
+
+- [Our Story](https://finsweet1.netlify.app/company): Learn about Finsweet's journey from startup to industry leader
+- [Team](https://finsweet1.netlify.app/company): Meet our team of skilled professionals
+- [Vision](https://finsweet1.netlify.app/company): Our vision for global digital transformation
+
+## Blog
+
+- [All Posts](https://finsweet1.netlify.app/blog): Latest articles and insights
+- [Trending Posts](https://finsweet1.netlify.app/blog): Popular content from our blog
+
+## Career
+
+- [Open Positions](https://finsweet1.netlify.app/career): Join our team of professionals
+- [Culture](https://finsweet1.netlify.app/career): Our work culture and values
+
+## Contact
+
+- [Contact Us](https://finsweet1.netlify.app/contact): Get in touch with our team
