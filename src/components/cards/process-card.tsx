@@ -29,7 +29,7 @@ const ProcessCard: FC<IProcessCard> = ({
 				0{order}
 			</span>
 			<div className='flex gap-4 lsm:flex-col'>
-				<img className='w-[47px] h-[47px]' src={img} alt={title} />
+				<img className='w-[47px] h-[47px]' src={img} alt={title} width='47' height='47' />
 				<div>
 					<h3 className='font-semibold leading-[28px]'>{title}</h3>
 					<p className='text-gray-500 text-darkBlue'>{text}</p>

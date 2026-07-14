@@ -38,7 +38,7 @@ const ServicesSection = () => {
 				<div className='grid gap-8 grid-cols-3 mt-20 md:grid-cols-1 lsm:mt-7'>
 					{services.map(service => (
 						<div key={service.title} className='bg-white p-8'>
-							<img className='mb-4 w-[47px]' src={service.icon} alt='' />
+							<img className='mb-4 w-[47px]' src={service.icon} alt='' width='47' height='47' />
 							<h3 className='font-semibold leading-[28px]'>{service.title}</h3>
 							<p className='mb-6 leading-[24px] text-[#4B5563]'>
 								{service.description}

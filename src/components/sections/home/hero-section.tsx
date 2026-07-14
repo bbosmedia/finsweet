@@ -31,11 +31,11 @@ const HeroSection = () => {
 						We've Worked with
 					</h3>
 				</div>
-				<img src='/images/logos/1.webp' alt='' />
-				<img src='/images/logos/2.webp' alt='' />
-				<img src='/images/logos/3.webp' alt='' />
-				<img src='/images/logos/4.webp' alt='' />
-				<img src='/images/logos/5.webp' alt='' />
+				<img src='/images/logos/1.webp' alt='' width='186' height='105' />
+				<img src='/images/logos/2.webp' alt='' width='187' height='106' />
+				<img src='/images/logos/3.webp' alt='' width='187' height='105' />
+				<img src='/images/logos/4.webp' alt='' width='186' height='104' />
+				<img src='/images/logos/5.webp' alt='' width='187' height='105' />
 			</div>
 		</header>
 	)

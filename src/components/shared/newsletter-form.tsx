@@ -4,7 +4,7 @@ const NewsletterForm = () => {
 	return (
 		<section className='mt-24 md:mt-10 lsm:mt-4 lsm:p-0 lsm:mb-5'>
 			<div className='max-w-[1320px] w-full px-5 mx-auto'>
-				<div className='relative p-24 bg-[#666DFF] lsm:py-10 lsm:px-6'>
+				<div className='relative p-24 bg-[#5258E6] lsm:py-10 lsm:px-6'>
 					<div className='absolute top-0 right-0 h-full w-[24px] bg-[linear-gradient(180deg,#FFA155_0%,#FFA155_25%,#FFE6D2_25%,#FFE6D2_75%,#444CFC_75%,#444CFC_100%)] lsm:hidden' />
 					<img
 						className='absolute top-0 left-0 lsm:hidden h-[99px]'

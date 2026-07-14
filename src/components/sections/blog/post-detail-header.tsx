@@ -20,7 +20,7 @@ const PostDetailHeader = () => {
 					clients
 				</p>
 				<div className='flex items-center gap-3'>
-					<img className='h-8' src='/images/home-customers/3.webp' alt='' />
+					<img className='h-8' src='/images/home-customers/3.webp' alt='' width='48' height='48' />
 					<div className='flex items-center gap-3 md:flex-col md:items-start md:gap-0'>
 						<p className='pr-3 border-r border-r-black/20 md:border-r-0'>
 							Andrew Jonson

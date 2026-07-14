@@ -21,7 +21,7 @@ const CultureSection = () => {
 				<div className='mt-16 grid grid-cols-3 gap-3 md:mt-6 md:grid-cols-2 xlsm:grid-cols-1'>
 					{companyCulture.map((item, index) => (
 						<div key={index} className='bg-white p-8'>
-							<img className='mb-2 h-[40px]' src={item.img} alt={item.title} />
+							<img className='mb-2 h-[40px]' src={item.img} alt={item.title} width='41' height='40' />
 							<h6 className='font-semibold mb-2 leading-7 text-[16px]'>
 								{item.title}
 							</h6>

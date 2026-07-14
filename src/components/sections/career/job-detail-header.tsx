@@ -7,9 +7,9 @@ const JobDetailHeader = () => {
 			<div className='max-w-[1320px] w-full px-5 mx-auto max-w-[1100px]'>
 				<div className='grid grid-cols-2 gap-5 md:grid-cols-1'>
 					<div>
-						<h5 className='font-medium [letter-spacing:3px] uppercase opacity-[0.87] mb-4 text-black'>
+						<h3 className='font-medium [letter-spacing:3px] uppercase opacity-[0.87] mb-4 text-black'>
 							CAREER AT Ether
-						</h5>
+						</h3>
 						<h2 className='font-semibold text-[48px] leading-[1.2] text-darkBlue max-[425px]:text-[32px] max-[320px]:text-[27px]'>
 							Full Stack Developer
 						</h2>
@@ -25,9 +25,9 @@ const JobDetailHeader = () => {
 							src='/images/btn-shape.webp'
 							alt=''
 						/>
-						<h5 className='font-semibold leading-9 text-[24px]'>
+						<h3 className='font-semibold leading-9 text-[24px]'>
 							Job Description
-						</h5>
+						</h3>
 						<p>Remote, India , 4 to 5 Years Of Experience</p>
 						<p>Department: Product Engineering</p>
 						<p>Full Time 5 Position Available.</p>

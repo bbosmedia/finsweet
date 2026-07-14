@@ -14,9 +14,9 @@ const AboutSection = () => {
 	return (
 		<section className='py-24 max-[425px]:py-[30px] pt-[120px]'>
 			<Container>
-				<h5 className='font-medium [letter-spacing:3px] uppercase opacity-[0.87] mb-4 text-black'>
+				<h3 className='font-medium [letter-spacing:3px] uppercase opacity-[0.87] mb-4 text-black'>
 					About Us
-				</h5>
+				</h3>
 				<div className='flex gap-5 justify-between md:flex-col'>
 					<h3 className='font-semibold text-[48px] leading-[1.2] text-darkBlue max-[425px]:text-[32px] max-[320px]:text-[27px] max-w-[640px]'>
 						The company leads entire webdesign process from concept to delivery.

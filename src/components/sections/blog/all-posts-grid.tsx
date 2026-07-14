@@ -13,7 +13,7 @@ const AllPostsGrid = () => {
 					{dataAllPosts.map((post, index) => (
 						<div key={index}>
 							<div>
-								<img className='w-full h-auto' src={post.img} alt='' />
+								<img className='w-full h-auto' src={post.img} alt='' width='405' height='266' />
 							</div>
 							<div className='bg-white p-8 md:p-4'>
 								<h6 className='font-semibold mb-4 text-[24px] leading-[36px] lsm:text-[18px] lsm:leading-[1.4]'>
@@ -22,7 +22,7 @@ const AllPostsGrid = () => {
 								<p className='opacity-90 mb-6 lsm:text-[16px]'>{post.text}</p>
 								<div className='flex items-center gap-4'>
 									<Link to='/blogger/1'>
-										<img className='h-8 w-8' src={post.userImg} alt='' />
+										<img className='h-8 w-8' src={post.userImg} alt='' width='32' height='32' />
 									</Link>
 									<div>
 										<Link to='/blogger/1'>

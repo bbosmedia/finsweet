@@ -48,7 +48,7 @@ const ExpertiseSection = () => {
 							key={item.title}
 							className='bg-white flex p-8 gap-4 w-full sm:flex-col sm:items-center sm:text-center'
 						>
-							<img className='h-[47px] w-[47px]' src={item.icon} alt='Icon' />
+							<img className='h-[47px] w-[47px]' src={item.icon} alt='Icon' width='47' height='47' />
 							<div>
 								<h3 className='font-semibold mb-2 text-[16px] leading-[28px]'>
 									{item.title}

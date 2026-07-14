@@ -9,9 +9,9 @@ const CareerHero = () => {
 					src='/images/btn-shape.webp'
 					alt=''
 				/>
-				<h5 className='font-medium [letter-spacing:3px] uppercase text-gray-500 mb-4'>
+				<h3 className='font-medium [letter-spacing:3px] uppercase text-gray-500 mb-4'>
 					CAREER AT FINSWEET
-				</h5>
+				</h3>
 				<h2 className='font-semibold text-[48px] leading-[1.2] text-darkBlue max-[425px]:text-[32px] max-[320px]:text-[27px] max-w-[624px]'>
 					We hired people who are Always Passionate about what they do
 				</h2>
