@@ -1,13 +1,13 @@
 import type React from 'react'
-import Home from '@/pages/Home'
-import Services from '@/pages/Services'
-import Company from '@/pages/Company'
-import Career from '@/pages/Career'
-import CareerItem from '@/pages/CareerItem'
-import Blog from '@/pages/Blog'
-import SingleBlog from '@/pages/SingleBlog'
-import SingleBlogger from '@/pages/SingleBlogger'
-import Contact from '@/pages/Contact'
+import Home from '@/pages/home-page'
+import Services from '@/pages/services-page'
+import Company from '@/pages/company-page'
+import Career from '@/pages/career-page'
+import CareerItem from '@/pages/career-item-page'
+import Blog from '@/pages/blog-page'
+import SingleBlog from '@/pages/single-blog-page'
+import SingleBlogger from '@/pages/single-blogger-page'
+import Contact from '@/pages/contact-page'
 
 interface IPageItem {
 	path: string

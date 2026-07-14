@@ -1,4 +1,5 @@
 import React from 'react'
+import Container from '@/components/ui/container'
 import type { IServicesData } from '@/data/services-list-data'
 
 const ServiceItem = ({
@@ -15,7 +16,7 @@ const ServiceItem = ({
 			className='pb-24 lg:pt-24 md:py-12 lsm:py-6'
 			style={{ backgroundColor: item.color }}
 		>
-			<div className='max-w-[1320px] w-full px-5 mx-auto flex gap-5 justify-between items-center lg:flex-col'>
+			<Container className='flex gap-5 justify-between items-center lg:flex-col'>
 				<div
 					className={`max-w-[624px] lg:w-full lg:max-w-none ${
 						isEven ? 'order-2 lg:order-1' : ''
@@ -36,7 +37,7 @@ const ServiceItem = ({
 					src={item.img}
 					alt={item.name}
 				/>
-			</div>
+			</Container>
 		</section>
 	)
 }

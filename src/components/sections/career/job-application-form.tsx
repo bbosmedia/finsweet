@@ -1,7 +1,9 @@
-import { Field, Form, Formik } from 'formik'
 import React from 'react'
+import { Form, Formik } from 'formik'
 import * as Yup from 'yup'
-import { BsArrowRight } from 'react-icons/bs'
+import Container from '@/components/ui/container'
+import FormField from '@/components/ui/form-field'
+import SubmitButton from '@/components/ui/submit-button'
 
 const SignupSchema = Yup.object().shape({
 	firstname: Yup.string()
@@ -20,7 +22,7 @@ const SignupSchema = Yup.object().shape({
 const JobApplicationForm = () => {
 	return (
 		<section className='py-24 max-[425px]:py-[30px]'>
-			<div className='max-w-[1320px] w-full px-5 mx-auto'>
+			<Container>
 				<h2 className='font-semibold text-[48px] leading-[1.2] text-darkBlue max-[425px]:text-[32px] max-[320px]:text-[27px] mb-7 lsm:mb-4'>
 					Apply Now
 				</h2>
@@ -41,75 +43,44 @@ const JobApplicationForm = () => {
 					{({ errors, touched }) => (
 						<Form>
 							<div className='grid grid-cols-2 gap-8 mb-8 md:grid-cols-1 lsm:gap-4 lsm:mb-4'>
-								<div>
-									<Field
-										className='py-8 px-10 w-full bg-lightGrey font-medium text-siteDark border-0 outline-none inline-block lsm:py-2 lsm:px-3 lsm:font-normal placeholder:text-siteDark placeholder:opacity-80'
-										name='firstname'
-										placeholder='First Name'
-									/>
-									{errors.firstname && touched.firstname && (
-										<p className='text-red-500 font-medium mt-1'>
-											{errors.firstname}
-										</p>
-									)}
-								</div>
-
-								<div>
-									<Field
-										className='py-8 px-10 w-full bg-lightGrey font-medium text-siteDark border-0 outline-none inline-block lsm:py-2 lsm:px-3 lsm:font-normal placeholder:text-siteDark placeholder:opacity-80'
-										name='lastname'
-										placeholder='Last Name'
-									/>
-									{errors.lastname && touched.lastname && (
-										<p className='text-red-500 font-medium mt-1'>
-											{errors.lastname}
-										</p>
-									)}
-								</div>
-
-								<div>
-									<Field
-										className='py-8 px-10 w-full bg-lightGrey font-medium text-siteDark border-0 outline-none inline-block lsm:py-2 lsm:px-3 lsm:font-normal placeholder:text-siteDark placeholder:opacity-80'
-										name='email'
-										placeholder='Email Id'
-									/>
-									{errors.email && touched.email && (
-										<p className='text-red-500 font-medium mt-1'>
-											{errors.email}
-										</p>
-									)}
-								</div>
-
-								<div>
-									<Field
-										className='py-8 px-10 w-full bg-lightGrey font-medium text-siteDark border-0 outline-none inline-block lsm:py-2 lsm:px-3 lsm:font-normal placeholder:text-siteDark placeholder:opacity-80'
-										name='mobile'
-										placeholder='Mobile No'
-									/>
-									{errors.mobile && touched.mobile && (
-										<p className='text-red-500 font-medium mt-1'>
-											{errors.mobile}
-										</p>
-									)}
-								</div>
+								<FormField
+									name='firstname'
+									placeholder='First Name'
+									error={errors.firstname}
+									touched={touched.firstname}
+								/>
+								<FormField
+									name='lastname'
+									placeholder='Last Name'
+									error={errors.lastname}
+									touched={touched.lastname}
+								/>
+								<FormField
+									name='email'
+									placeholder='Email Id'
+									error={errors.email}
+									touched={touched.email}
+								/>
+								<FormField
+									name='mobile'
+									placeholder='Mobile No'
+									error={errors.mobile}
+									touched={touched.mobile}
+								/>
 							</div>
-							<Field
+							<FormField
 								as='textarea'
-								className='py-8 px-10 w-full bg-lightGrey font-medium text-siteDark border-0 outline-none inline-block lsm:py-2 lsm:px-3 lsm:font-normal placeholder:text-siteDark placeholder:opacity-80'
 								name='message'
 								rows={5}
 								placeholder='Why do you thing you are good fit for Ether?'
+								error={errors.message}
+								touched={touched.message}
 							/>
-							{errors.message && touched.message && (
-								<p className='text-red-500 font-medium mt-1'>
-									{errors.message}
-								</p>
-							)}
 							<div className='flex gap-6 mt-8 lsm:mt-4'>
-								<Field
-									className='py-8 px-10 w-full bg-lightGrey font-medium text-siteDark border-0 outline-none inline-block lsm:py-2 lsm:px-3 lsm:font-normal placeholder:text-siteDark placeholder:opacity-80 h-[36px] w-[36px]'
+								<FormField
 									type='checkbox'
 									name='confirm'
+									className='h-[36px] w-[36px]'
 								/>
 								<p className='max-w-[842px] text-[16px] leading-[24px]'>
 									I agree to accept the privacy policy, We will add your contact
@@ -117,19 +88,11 @@ const JobApplicationForm = () => {
 									regarding your request.
 								</p>
 							</div>
-							<button className='bg-main px-8 py-5 relative text-white mt-14'>
-								<img
-									className='absolute top-0 left-0'
-									src='/images/btn-shape.png'
-								/>
-								<span className='flex items-center gap-3'>
-									Submit Application <BsArrowRight />
-								</span>
-							</button>
+							<SubmitButton label='Submit Application' />
 						</Form>
 					)}
 				</Formik>
-			</div>
+			</Container>
 		</section>
 	)
 }

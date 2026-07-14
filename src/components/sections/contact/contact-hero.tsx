@@ -1,17 +1,13 @@
 import React from 'react'
-import {
-	BsFacebook,
-	BsTwitter,
-	BsInstagram,
-	BsLinkedin,
-	BsArrowRight
-} from 'react-icons/bs'
 import { Field, Form, Formik } from 'formik'
+import Container from '@/components/ui/container'
+import SubmitButton from '@/components/ui/submit-button'
+import SocialIcons from '@/components/ui/social-icons'
 
 const ContactHero = () => {
 	return (
 		<header className='py-24 max-[425px]:py-[30px]'>
-			<div className='max-w-[1320px] w-full px-5 mx-auto'>
+			<Container>
 				<div className='grid grid-cols-[1.2fr_1fr] gap-5 md:grid-cols-1 md:gap-7'>
 					<div>
 						<div className='h-7 w-7 bg-siteOrange mb-6'></div>
@@ -112,15 +108,7 @@ const ContactHero = () => {
 											)}
 										</div>
 									</div>
-									<button className='bg-main px-8 py-5 relative text-white mt-14'>
-										<img
-											className='absolute top-0 left-0'
-											src='/images/btn-shape.png'
-										/>
-										<span className='flex items-center gap-3'>
-											Send Message <BsArrowRight />
-										</span>
-									</button>
+									<SubmitButton label='Send Message' />
 								</Form>
 							)}
 						</Formik>
@@ -157,36 +145,16 @@ const ContactHero = () => {
 								</h3>
 								<h5 className='text-white/70 text-[14px]'>Hello@ether.com</h5>
 							</div>
-							<div className='flex gap-6 mt-14 lsm:mt-6'>
-								<a
-									className='text-white/70 transition-[all] duration-[400ms] ease-in-out hover:text-white'
-									href='#'
-								>
-									<BsFacebook />
-								</a>
-								<a
-									className='text-white/70 transition-[all] duration-[400ms] ease-in-out hover:text-white'
-									href='#'
-								>
-									<BsTwitter />
-								</a>
-								<a
-									className='text-white/70 transition-[all] duration-[400ms] ease-in-out hover:text-white'
-									href='#'
-								>
-									<BsInstagram />
-								</a>
-								<a
-									className='text-white/70 transition-[all] duration-[400ms] ease-in-out hover:text-white'
-									href='#'
-								>
-									<BsLinkedin />
-								</a>
-							</div>
+							<SocialIcons
+								icons={['facebook', 'twitter', 'instagram', 'linkedin']}
+								variant='light'
+								hoverColor='hover:text-white'
+								className='mt-14 lsm:mt-6'
+							/>
 						</div>
 					</div>
 				</div>
-			</div>
+			</Container>
 		</header>
 	)
 }

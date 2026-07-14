@@ -1,9 +1,18 @@
 import React from 'react'
+import Container from '@/components/ui/container'
+import StatCard from '@/components/ui/stat-card'
+
+const stats = [
+	{ value: '1560+', label: 'Project Delivered' },
+	{ value: '100+', label: 'Professional' },
+	{ value: '950+', label: 'Happy Client' },
+	{ value: '10yrs', label: 'Experience' }
+]
 
 const OurStory = () => {
 	return (
 		<section className='pt-24 lsm:pt-6'>
-			<div className='max-w-[1320px] w-full px-5 mx-auto grid grid-cols-2 gap-5 md:grid-cols-1'>
+			<Container className='grid grid-cols-2 gap-5 md:grid-cols-1'>
 				<div>
 					<div className='h-7 w-7 bg-main mb-6'></div>
 					<h4 className='font-medium [letter-spacing:3px] uppercase text-gray-500 mb-4'>
@@ -23,37 +32,16 @@ const OurStory = () => {
 				</div>
 				<div className='bg-siteOrange/60 flex items-center justify-center p-5'>
 					<div className='grid grid-cols-2 gap-[62px] lsm:grid-cols-1'>
-						<div>
-							<h3 className='font-semibold text-[36px] leading-[1.5] text-darkBlue max-[425px]:text-[22px] max-[425px]:leading-[1.3]'>
-								1560+
-							</h3>
-							<div className='bg-[linear-gradient(90deg,#FFA155_0%,#FFA155_25%,#FFE6D2_25%,#FFE6D2_75%,#444CFC_75%,#444CFC_100%)] mb-1 w-[72px] h-[6px]'></div>
-							<p>Project Delivered</p>
-						</div>
-						<div>
-							<h3 className='font-semibold text-[36px] leading-[1.5] text-darkBlue max-[425px]:text-[22px] max-[425px]:leading-[1.3]'>
-								100+
-							</h3>
-							<div className='bg-[linear-gradient(90deg,#FFA155_0%,#FFA155_25%,#FFE6D2_25%,#FFE6D2_75%,#444CFC_75%,#444CFC_100%)] mb-1 w-[72px] h-[6px]'></div>
-							<p>Professional</p>
-						</div>
-						<div>
-							<h3 className='font-semibold text-[36px] leading-[1.5] text-darkBlue max-[425px]:text-[22px] max-[425px]:leading-[1.3]'>
-								950+
-							</h3>
-							<div className='bg-[linear-gradient(90deg,#FFA155_0%,#FFA155_25%,#FFE6D2_25%,#FFE6D2_75%,#444CFC_75%,#444CFC_100%)] mb-1 w-[72px] h-[6px]'></div>
-							<p>Happy Client</p>
-						</div>
-						<div>
-							<h3 className='font-semibold text-[36px] leading-[1.5] text-darkBlue max-[425px]:text-[22px] max-[425px]:leading-[1.3]'>
-								10yrs
-							</h3>
-							<div className='bg-[linear-gradient(90deg,#FFA155_0%,#FFA155_25%,#FFE6D2_25%,#FFE6D2_75%,#444CFC_75%,#444CFC_100%)] mb-1 w-[72px] h-[6px]'></div>
-							<p>Experience</p>
-						</div>
+						{stats.map(stat => (
+							<StatCard
+								key={stat.value}
+								value={stat.value}
+								label={stat.label}
+							/>
+						))}
 					</div>
 				</div>
-			</div>
+			</Container>
 		</section>
 	)
 }

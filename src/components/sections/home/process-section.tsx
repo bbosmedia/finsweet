@@ -1,17 +1,18 @@
 import React from 'react'
+import Container from '@/components/ui/container'
+import SectionHeading from '@/components/ui/section-heading'
 import ProcessCard from '@/components/cards/process-card'
 import { processdata } from '@/data/process-data'
 
 const ProcessSection = () => {
 	return (
 		<section className='py-24 max-[425px]:py-[30px]'>
-			<div className='max-w-[1320px] w-full px-5 mx-auto'>
-				<span className='font-medium [letter-spacing:3px] uppercase opacity-[0.87] mb-4 text-black'>
-					Our Process
-				</span>
-				<h2 className='font-semibold text-[48px] leading-[1.2] text-darkBlue max-[425px]:text-[32px] max-[320px]:text-[27px] mb-4 max-w-[733px]'>
-					The process we are working With Our client Worldwide
-				</h2>
+			<Container>
+				<SectionHeading
+					subtitle='Our Process'
+					title='The process we are working With Our client Worldwide'
+					className='mb-4 max-w-[733px]'
+				/>
 				<p className='max-w-[642px]'>
 					Through True Rich Attended does no end it his mother since real had
 					half every him case in packages enquire we up ecstatic unsatiable.
@@ -30,7 +31,7 @@ const ProcessSection = () => {
 						/>
 					))}
 				</div>
-			</div>
+			</Container>
 		</section>
 	)
 }

@@ -1,23 +1,24 @@
 import React from 'react'
 import { BsInstagram, BsLinkedin, BsTwitter } from 'react-icons/bs'
+import Container from '@/components/ui/container'
+import SectionHeading from '@/components/ui/section-heading'
 import { companyTeam } from '@/data/team-data'
 
 const TeamSection = () => {
 	return (
 		<section>
-			<div className='max-w-[1320px] w-full px-5 mx-auto'>
-				<h5 className='font-medium [letter-spacing:3px] uppercase opacity-[0.87] mb-4 text-black'>
-					Meet Our Team
-				</h5>
-				<h2 className='font-semibold text-[48px] leading-[1.2] text-darkBlue max-[425px]:text-[32px] max-[320px]:text-[27px] max-w-[624px]'>
-					Teamwork is the only way we work{' '}
-				</h2>
+			<Container>
+				<SectionHeading
+					subtitle='Meet Our Team'
+					title='Teamwork is the only way we work'
+					className='max-w-[624px]'
+				/>
 				<p className='text-gray-500 mt-6 mb-16 lsm:mb-6 max-w-[505.5px]'>
 					Through True Rich Attended does no end it his mother since real had
 					half every him case in packages enquire we up ecstatic unsatiable.
 				</p>
-			</div>
-			<div className='max-w-[1320px] w-full px-5 mx-auto grid grid-cols-4 relative md:grid-cols-2 lsm:grid-cols-1'>
+			</Container>
+			<Container className='grid grid-cols-4 relative md:grid-cols-2 lsm:grid-cols-1'>
 				{companyTeam.map((item, index) => (
 					<div
 						key={index}
@@ -47,7 +48,7 @@ const TeamSection = () => {
 						</div>
 					</div>
 				))}
-			</div>
+			</Container>
 		</section>
 	)
 }

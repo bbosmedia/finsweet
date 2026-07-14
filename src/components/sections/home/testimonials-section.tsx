@@ -1,10 +1,11 @@
 import React from 'react'
+import Container from '@/components/ui/container'
 import TestimonialSlider from '@/components/sections/home/testimonial-slider'
 
 const TestimonialsSection = () => {
 	return (
 		<section className='py-24 max-[425px]:py-[30px] bg-lightGrey'>
-			<div className='max-w-[1320px] w-full px-5 mx-auto'>
+			<Container>
 				<div
 					className='grid gap-5 md:gap-7 md:grid-cols-1'
 					style={{ gridTemplateColumns: '50% 50%' }}
@@ -32,7 +33,7 @@ const TestimonialsSection = () => {
 					</div>
 					<TestimonialSlider></TestimonialSlider>
 				</div>
-			</div>
+			</Container>
 		</section>
 	)
 }
