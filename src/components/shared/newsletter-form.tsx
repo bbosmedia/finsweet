@@ -8,7 +8,7 @@ const NewsletterForm = () => {
 					<div className='absolute top-0 right-0 h-full w-[24px] bg-[linear-gradient(180deg,#FFA155_0%,#FFA155_25%,#FFE6D2_25%,#FFE6D2_75%,#444CFC_75%,#444CFC_100%)] lsm:hidden' />
 					<img
 						className='absolute top-0 left-0 lsm:hidden h-[99px]'
-						src='/images/btn-shape-big.png'
+						src='/images/btn-shape-big.webp'
 						alt=''
 					/>
 					<div className='grid grid-cols-2 items-center justify-between md:grid-cols-1 md:gap-8'>

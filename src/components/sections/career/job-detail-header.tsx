@@ -22,7 +22,7 @@ const JobDetailHeader = () => {
 					<div className='bg-siteOrange relative p-20 flex flex-col gap-6 lsm:p-5 sm:gap-3'>
 						<img
 							className='absolute right-0 top-0 rotate-90 xlsm:hidden'
-							src='/images/btn-shape.png'
+							src='/images/btn-shape.webp'
 							alt=''
 						/>
 						<h5 className='font-semibold leading-9 text-[24px]'>

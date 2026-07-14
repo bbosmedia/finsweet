@@ -20,7 +20,7 @@ const Navbar = () => {
 		<nav className='bg-darkBlue border-b border-b-white/5 z-[99]'>
 			<div className='max-w-[1320px] w-full px-5 mx-auto flex items-center justify-between h-[80px]'>
 				<Link to='/'>
-					<img src='/images/Logo.png' alt='Site Logo' />
+					<img src='/images/Logo.webp' alt='Site Logo' />
 				</Link>
 				<button
 					className='border-none text-white outline-none hidden text-[24px] h-[80px] max-[990px]:block'

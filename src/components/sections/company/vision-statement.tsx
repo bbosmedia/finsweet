@@ -18,7 +18,7 @@ const VisionStatement = () => {
 				</p>
 				<img
 					className='w-full object-cover min-h-[200px]'
-					src='/images/company-vision.png'
+					src='/images/company-vision.webp'
 					alt=''
 				/>
 			</Container>

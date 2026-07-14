@@ -7,7 +7,7 @@ const PostDetailBody = () => {
 				<div className='w-full h-full relative mb-24 md:mb-6'>
 					<img
 						className='w-full object-cover h-[346px]'
-						src='/images/company-vision.png'
+						src='/images/company-vision.webp'
 						alt=''
 					/>
 					<div className='absolute w-full right-0 h-[17px] max-w-[346px] bottom-[-17px] bg-[linear-gradient(90deg,#FFA155_0%,#FFA155_25%,#FFE6D2_25%,#FFE6D2_75%,#444CFC_75%,#444CFC_100%)] md:hidden' />

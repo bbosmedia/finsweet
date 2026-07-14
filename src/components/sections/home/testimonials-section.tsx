@@ -23,9 +23,9 @@ const TestimonialsSection = () => {
 							the readable content of a page when looking at its layout.
 						</p>
 						<div className='flex gap-3 mb-3'>
-							<img src='/images/home-customers/1.png' alt='Customer' />
-							<img src='/images/home-customers/2.png' alt='Customer' />
-							<img src='/images/home-customers/3.png' alt='Customer' />
+							<img src='/images/home-customers/1.webp' alt='Customer' />
+							<img src='/images/home-customers/2.webp' alt='Customer' />
+							<img src='/images/home-customers/3.webp' alt='Customer' />
 						</div>
 						<p className='font-medium text-[12px]'>
 							<span className='text-[16px]'>30+</span> Customer Reviews

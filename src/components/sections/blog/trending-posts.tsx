@@ -28,7 +28,7 @@ const TrendingPosts = () => {
 						<div className='flex items-center gap-3 mb-14 lsm:flex-col lsm:items-start'>
 							<div className='flex items-center gap-3 pr-3 border-r border-r-black/20 lsm:border-r-0'>
 								<Link to='/blogger/1'>
-									<img src='/images/home-customers/3.png' alt='' />
+									<img src='/images/home-customers/3.webp' alt='' />
 								</Link>
 								<Link to='/blogger/1'>
 									<span>Andrew Jonson</span>
@@ -36,13 +36,13 @@ const TrendingPosts = () => {
 							</div>
 							<span className='text-gray-500'>Posted on 27th January 2021</span>
 						</div>
-						<img className='w-full' src='/images/blog-page.png' alt='' />
+						<img className='w-full' src='/images/blog-page.webp' alt='' />
 					</div>
 					<div className='w-1/2 md:w-full max-w-[515px]'>
 						<div className='w-full bg-siteOrange flex flex-col gap-16 relative lsm:gap-6 p-[72px] lsm:p-5'>
 							<img
 								className='absolute top-0 right-0 rotate-90 lsm:hidden'
-								src='/images/btn-shape.png'
+								src='/images/btn-shape.webp'
 								alt=''
 							/>
 							<div>
@@ -54,7 +54,7 @@ const TrendingPosts = () => {
 								</Link>
 								<div className='flex gap-3'>
 									<Link to='/blogger/1'>
-										<img src='/images/home-customers/3.png' alt='' />
+										<img src='/images/home-customers/3.webp' alt='' />
 									</Link>
 									<div>
 										<Link to='/blogger/1'>
@@ -75,7 +75,7 @@ const TrendingPosts = () => {
 								</Link>
 								<div className='flex gap-3'>
 									<Link to='/blogger/1'>
-										<img src='/images/home-customers/3.png' alt='' />
+										<img src='/images/home-customers/3.webp' alt='' />
 									</Link>
 									<div>
 										<Link to='/blogger/1'>
@@ -96,7 +96,7 @@ const TrendingPosts = () => {
 								</Link>
 								<div className='flex gap-3'>
 									<Link to='/blogger/1'>
-										<img src='/images/home-customers/3.png' alt='' />
+										<img src='/images/home-customers/3.webp' alt='' />
 									</Link>
 									<div>
 										<Link to='/blogger/1'>

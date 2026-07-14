@@ -4,12 +4,12 @@ import ReadMoreLink from '@/components/ui/read-more-link'
 
 const posts = [
 	{
-		img: '/images/home-blog/1.png',
+		img: '/images/home-blog/1.webp',
 		date: 'Jan 19, 2021',
 		title: "Today's best design trends for digital products"
 	},
 	{
-		img: '/images/home-blog/2.png',
+		img: '/images/home-blog/2.webp',
 		date: 'Jan 19, 2021',
 		title: "Today's best design trends for digital products"
 	}

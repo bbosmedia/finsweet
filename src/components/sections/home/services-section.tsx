@@ -6,19 +6,19 @@ import ReadMoreLink from '@/components/ui/read-more-link'
 
 const services = [
 	{
-		icon: '/images/home-services/1.png',
+		icon: '/images/home-services/1.webp',
 		title: 'Technical support',
 		description:
 			'We aim to attain the greatest satisfaction for our clients and be one of the prominent names when it comes to world-class service'
 	},
 	{
-		icon: '/images/home-services/2.png',
+		icon: '/images/home-services/2.webp',
 		title: 'Testing Management',
 		description:
 			'We aim to attain the greatest satisfaction for our clients and be one of the prominent names when it comes to world-class service'
 	},
 	{
-		icon: '/images/home-services/3.png',
+		icon: '/images/home-services/3.webp',
 		title: 'Development',
 		description:
 			'We aim to attain the greatest satisfaction for our clients and be one of the prominent names when it comes to world-class service'

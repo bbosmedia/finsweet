@@ -31,7 +31,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "convert:webp": "bun run scripts/convert-to-webp.ts"
   },
   "browserslist": {
     "production": [
@@ -55,6 +56,7 @@
     "globals": "^17.7.0",
     "prettier": "^2.7.1",
     "sass": "1.55.0",
+    "sharp": "^0.35.3",
     "tailwindcss": "^4.3.2",
     "typescript-eslint": "^8.64.0",
     "vite": "^8.1.4"

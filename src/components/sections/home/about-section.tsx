@@ -35,17 +35,17 @@ const AboutSection = () => {
 				<div className='grid grid-cols-3 gap-3 pr-4 mt-12 relative md:grid-cols-1 md:pr-0 md:mt-5'>
 					<img
 						className='w-full object-cover h-[400px]'
-						src='/images/home-about/1.jpg'
+						src='/images/home-about/1.webp'
 						alt=''
 					/>
 					<img
 						className='w-full object-cover h-[400px]'
-						src='/images/home-about/2.jpg'
+						src='/images/home-about/2.webp'
 						alt=''
 					/>
 					<img
 						className='w-full object-cover h-[400px]'
-						src='/images/home-about/3.jpg'
+						src='/images/home-about/3.webp'
 						alt=''
 					/>
 					<div className='absolute right-0 top-0 h-full w-[18px] bg-[linear-gradient(180deg,#FFA155_0%,#FFA155_25%,#FFE6D2_25%,#FFE6D2_75%,#444CFC_75%,#444CFC_100%)] z-[-1] md:hidden' />

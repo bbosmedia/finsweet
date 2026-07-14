@@ -6,27 +6,27 @@ const BrandLogos = () => {
 			<div className='bg-lightGrey flex items-center justify-between px-16 gap-8 overflow-x-scroll [&::-webkit-scrollbar]:h-0 [&::-webkit-scrollbar]:w-0 [&::-webkit-scrollbar]:bg-transparent [&::-webkit-scrollbar-track]:w-0 lsm:px-6'>
 				<img
 					className='h-[104px] w-[186px]'
-					src='/images/black-logos/1.png'
+					src='/images/black-logos/1.webp'
 					alt=''
 				/>
 				<img
 					className='h-[104px] w-[186px]'
-					src='/images/black-logos/2.png'
+					src='/images/black-logos/2.webp'
 					alt=''
 				/>
 				<img
 					className='h-[104px] w-[186px]'
-					src='/images/black-logos/3.png'
+					src='/images/black-logos/3.webp'
 					alt=''
 				/>
 				<img
 					className='h-[104px] w-[186px]'
-					src='/images/black-logos/4.png'
+					src='/images/black-logos/4.webp'
 					alt=''
 				/>
 				<img
 					className='h-[104px] w-[186px]'
-					src='/images/black-logos/5.png'
+					src='/images/black-logos/5.webp'
 					alt=''
 				/>
 			</div>

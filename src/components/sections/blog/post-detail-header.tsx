@@ -7,7 +7,7 @@ const PostDetailHeader = () => {
 				<div className='h-7 w-7 bg-siteOrange mb-6'></div>
 				<img
 					className='absolute top-0 right-0 rotate-90 md:hidden'
-					src='/images/btn-shape.png'
+					src='/images/btn-shape.webp'
 					alt=''
 				/>
 				<h2 className='font-semibold text-[48px] leading-[1.2] text-darkBlue max-[425px]:text-[32px] max-[320px]:text-[27px] mb-6 md:mb-4 max-w-[729px]'>
@@ -20,7 +20,7 @@ const PostDetailHeader = () => {
 					clients
 				</p>
 				<div className='flex items-center gap-3'>
-					<img className='h-8' src='/images/home-customers/3.png' alt='' />
+					<img className='h-8' src='/images/home-customers/3.webp' alt='' />
 					<div className='flex items-center gap-3 md:flex-col md:items-start md:gap-0'>
 						<p className='pr-3 border-r border-r-black/20 md:border-r-0'>
 							Andrew Jonson

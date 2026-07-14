@@ -18,7 +18,7 @@ const HeroSection = () => {
 				</div>
 				<img
 					className='max-w-[563px] w-1/2 md:w-full'
-					src='/images/header-img.png'
+					src='/images/header-img.webp'
 					alt='Hero'
 				/>
 			</div>
@@ -31,11 +31,11 @@ const HeroSection = () => {
 						We've Worked with
 					</h4>
 				</div>
-				<img src='/images/logos/1.png' alt='' />
-				<img src='/images/logos/2.png' alt='' />
-				<img src='/images/logos/3.png' alt='' />
-				<img src='/images/logos/4.png' alt='' />
-				<img src='/images/logos/5.png' alt='' />
+				<img src='/images/logos/1.webp' alt='' />
+				<img src='/images/logos/2.webp' alt='' />
+				<img src='/images/logos/3.webp' alt='' />
+				<img src='/images/logos/4.webp' alt='' />
+				<img src='/images/logos/5.webp' alt='' />
 			</div>
 		</header>
 	)

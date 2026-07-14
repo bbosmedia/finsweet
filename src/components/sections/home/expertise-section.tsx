@@ -3,19 +3,19 @@ import Container from '@/components/ui/container'
 
 const expertiseItems = [
 	{
-		icon: '/images/home-epertise/1.png',
+		icon: '/images/home-epertise/1.webp',
 		title: 'On Time Delivery',
 		description:
 			'Through True Rich Attended does no end it his mother since real had every him.'
 	},
 	{
-		icon: '/images/home-epertise/2.png',
+		icon: '/images/home-epertise/2.webp',
 		title: 'Best Quality',
 		description:
 			'Through True Rich Attended does no end it his mother since real had every him.'
 	},
 	{
-		icon: '/images/home-epertise/3.png',
+		icon: '/images/home-epertise/3.webp',
 		title: 'Support Assist',
 		description:
 			'Through True Rich Attended does no end it his mother since real had every him.'
