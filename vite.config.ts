@@ -4,16 +4,16 @@ import tailwindcss from '@tailwindcss/vite'
 import path from 'path'
 
 export default defineConfig({
-  plugins: [
-    tailwindcss(),
-    react(),
-  ],
-  resolve: {
-    alias: {
-      '@': path.resolve(__dirname, 'src'),
-    },
-  },
-  server: {
-    port: 3000,
-  },
+	plugins: [tailwindcss(), react()],
+	resolve: {
+		alias: {
+			'@': path.resolve(__dirname, 'src')
+		}
+	},
+	server: {
+		port: 3000
+	},
+	optimizeDeps: {
+		include: ['react-slick', 'slick-carousel']
+	}
 })

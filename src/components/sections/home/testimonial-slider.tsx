@@ -4,27 +4,26 @@ import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 
+const settings = {
+	dots: true,
+	infinite: true,
+	speed: 1500,
+	slidesToShow: 1,
+	slidesToScroll: 1,
+	arrows: false
+}
+
+const slides = [1, 2, 3]
+
 const TestimonialSlider = () => {
-	const settings = {
-		dots: true,
-		infinite: true,
-		speed: 1500,
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		arrows: false
-	}
 	return (
 		<div>
 			<Slider {...settings}>
-				<div className='pl-2 py-4'>
-					<TestimonialCard></TestimonialCard>
-				</div>
-				<div className='pl-2 py-4'>
-					<TestimonialCard></TestimonialCard>
-				</div>
-				<div className='pl-2 py-4'>
-					<TestimonialCard></TestimonialCard>
-				</div>
+				{slides.map(slide => (
+					<div key={slide} className='pl-2 py-4'>
+						<TestimonialCard />
+					</div>
+				))}
 			</Slider>
 		</div>
 	)
