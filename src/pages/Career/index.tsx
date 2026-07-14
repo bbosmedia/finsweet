@@ -5,7 +5,6 @@ import {
 	CompanyVacancies,
 	Subscription
 } from '../../components'
-import './index.scss'
 
 const Career = () => {
 	return (

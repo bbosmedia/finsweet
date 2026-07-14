@@ -1,33 +1,39 @@
 import React from 'react'
-import './style.scss'
+import BtnShapeImg from '../../assets/images/btn-shape.png'
+import HomeCustomers3 from '../../assets/images/home-customers/3.png'
 
 const SingleBlogHeader = () => {
 	return (
-		<header className='single-blog-header section'>
-			<div className='container relative'>
-				<div className='orange-box'></div>
+		<header className='single-blog-header py-24 max-[425px]:py-[30px]'>
+			<div className='max-w-[1320px] w-full px-5 mx-auto relative'>
+				<div className='h-7 w-7 bg-siteOrange mb-6'></div>
 				<img
-					className='btn-shape'
-					src={require('../../assets/images/btn-shape.png')}
+					className='absolute top-0 right-0 rotate-90 md:hidden'
+					src={BtnShapeImg}
 					alt=''
 				/>
-				<h2 className='section-title'>
+				<h2 className='font-semibold text-[48px] leading-[1.2] text-darkBlue max-[425px]:text-[32px] max-[320px]:text-[27px] mb-6 md:mb-4 max-w-[729px]'>
 					Breaking the code How did we build our Figma plugin
 				</h2>
-				<p className='section-text'>
+				<p className='block mb-8 md:mb-3 max-w-[719px]'>
 					It is a long established fact that a reader will be distracted by the
 					readable content of a page when looking at its layout. The Maker is a
 					decentralized. We aim to attain the greatest satisfaction for our
 					clients
 				</p>
-				<div className='user'>
+				<div className='flex items-center gap-3'>
 					<img
-						src={require('../../assets/images/home-customers/3.png')}
+						className='h-8'
+						src={HomeCustomers3}
 						alt=''
 					/>
-					<div className='info'>
-						<p className='name'>Andrew Jonson</p>
-						<p className='date'>Posted on 27th January 2021</p>
+					<div className='flex items-center gap-3 md:flex-col md:items-start md:gap-0'>
+						<p className='pr-3 border-r border-r-black/20 md:border-r-0'>
+							Andrew Jonson
+						</p>
+						<p className='text-gray-500'>
+							Posted on 27th January 2021
+						</p>
 					</div>
 				</div>
 			</div>

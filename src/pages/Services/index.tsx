@@ -1,12 +1,13 @@
 import React from 'react'
-import './index.scss'
 import { HomeProcess, ServiceHeader, ServicesMain, Subscription } from '../../components'
 
 const Services = () => {
 	return (
 		<main className='services-page'>
 			<ServiceHeader />
-			<HomeProcess />
+			<div className='bg-lightGrey'>
+				<HomeProcess />
+			</div>
 			<ServicesMain />
 			<Subscription />
 		</main>

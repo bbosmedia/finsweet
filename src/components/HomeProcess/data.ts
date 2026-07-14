@@ -1,3 +1,10 @@
+import HomeProcess1 from '../../assets/images/home-process/1.png'
+import HomeProcess2 from '../../assets/images/home-process/2.png'
+import HomeProcess3 from '../../assets/images/home-process/3.png'
+import HomeProcess4 from '../../assets/images/home-process/4.png'
+import HomeProcess5 from '../../assets/images/home-process/5.png'
+import HomeProcess6 from '../../assets/images/home-process/6.png'
+
 interface ICard {
 	order: number
 	img: string
@@ -8,37 +15,37 @@ interface ICard {
 export const processdata: ICard[] = [
 	{
 		order: 1,
-		img: require('../../assets/images/home-process/1.png'),
+		img: HomeProcess1,
 		title: 'Discover',
 		text: 'We aim to attain the greatest satisfaction for our clients and be one of the prominent.',
 	},
 	{
 		order: 2,
-		img: require('../../assets/images/home-process/2.png'),
+		img: HomeProcess2,
 		title: 'Designing',
 		text: 'We aim to attain the greatest satisfaction for our clients and be one of the prominent.',
 	},
 	{
 		order: 3,
-		img: require('../../assets/images/home-process/3.png'),
+		img: HomeProcess3,
 		title: 'Development',
 		text: 'We aim to attain the greatest satisfaction for our clients and be one of the prominent.',
 	},
 	{
 		order: 4,
-		img: require('../../assets/images/home-process/4.png'),
+		img: HomeProcess4,
 		title: 'Testing',
 		text: 'We aim to attain the greatest satisfaction for our clients and be one of the prominent.',
 	},
 	{
 		order: 5,
-		img: require('../../assets/images/home-process/5.png'),
+		img: HomeProcess5,
 		title: 'Deployment',
 		text: 'We aim to attain the greatest satisfaction for our clients and be one of the prominent.',
 	},
 	{
 		order: 6,
-		img: require('../../assets/images/home-process/6.png'),
+		img: HomeProcess6,
 		title: 'Maintenance',
 		text: 'We aim to attain the greatest satisfaction for our clients and be one of the prominent.',
 	},

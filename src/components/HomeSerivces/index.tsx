@@ -2,57 +2,62 @@ import React from 'react'
 import { BsArrowRight } from 'react-icons/bs'
 import { Link } from 'react-router-dom'
 import MainButton from '../MainButton'
-import './index.scss'
+import HomeServices1 from '../../assets/images/home-services/1.png'
+import HomeServices2 from '../../assets/images/home-services/2.png'
+import HomeServices3 from '../../assets/images/home-services/3.png'
 
 const HomeServices = () => {
 	return (
-		<section className='section home-services bg-siteOrange'>
-			<div className='container'>
-				<span className='section-name'>Our Service</span>
-				<h3 className='section-title'>
+		<section className='py-24 max-[425px]:py-[30px] home-services bg-siteOrange'>
+			<div className='max-w-[1320px] w-full px-5 mx-auto'>
+				<span className='font-medium [letter-spacing:3px] uppercase opacity-[0.87] mb-4 text-black'>Our Service</span>
+				<h3 className='font-semibold text-[48px] leading-[1.2] text-darkBlue max-[425px]:text-[32px] max-[320px]:text-[27px] max-w-[777px]'>
 					We build software solutions that solve client's business challenges
 				</h3>
 				<MainButton text='Start Project' link='/' />
-				<div className='cards'>
-					<div className='card'>
+				<div className='grid gap-8 grid-cols-3 mt-20 md:grid-cols-1 lsm:mt-7'>
+					<div className='bg-white p-8'>
 						<img
-							src={require('../../assets/images/home-services/1.png')}
+							className='mb-4 w-[47px]'
+							src={HomeServices1}
 							alt=''
 						/>
-						<h5>Technical support</h5>
-						<p>
+						<h5 className='font-semibold leading-[28px]'>Technical support</h5>
+						<p className='mb-6 leading-[24px] text-[#4B5563]'>
 							We aim to attain the greatest satisfaction for our clients and be
 							one of the prominent names when it comes to world-class service
 						</p>
-						<Link to='/'>
+						<Link className='flex items-center gap-3 text-main' to='/'>
 							Read More <BsArrowRight />
 						</Link>
 					</div>
-					<div className='card'>
+					<div className='bg-white p-8'>
 						<img
-							src={require('../../assets/images/home-services/2.png')}
+							className='mb-4 w-[47px]'
+							src={HomeServices2}
 							alt=''
 						/>
-						<h5>Testing Management</h5>
-						<p>
+						<h5 className='font-semibold leading-[28px]'>Testing Management</h5>
+						<p className='mb-6 leading-[24px] text-[#4B5563]'>
 							We aim to attain the greatest satisfaction for our clients and be
 							one of the prominent names when it comes to world-class service
 						</p>
-						<Link to='/'>
+						<Link className='flex items-center gap-3 text-main' to='/'>
 							Read More <BsArrowRight />
 						</Link>
 					</div>
-					<div className='card'>
+					<div className='bg-white p-8'>
 						<img
-							src={require('../../assets/images/home-services/3.png')}
+							className='mb-4 w-[47px]'
+							src={HomeServices3}
 							alt=''
 						/>
-						<h5>Development</h5>
-						<p>
+						<h5 className='font-semibold leading-[28px]'>Development</h5>
+						<p className='mb-6 leading-[24px] text-[#4B5563]'>
 							We aim to attain the greatest satisfaction for our clients and be
 							one of the prominent names when it comes to world-class service
 						</p>
-						<Link to='/'>
+						<Link className='flex items-center gap-3 text-main' to='/'>
 							Read More <BsArrowRight />
 						</Link>
 					</div>

@@ -1,31 +1,32 @@
 import React from 'react'
-import './style.scss'
 import { dataAllPosts } from './data';
 import { Link } from 'react-router-dom';
 
 const BlogAllPosts = () => {
   return (
-		<section className='section blog-all-posts'>
-			<div className='container'>
-				<h2 className='section-title'>All Posts</h2>
-				<div className='blog-all-posts-inner'>
+		<section className='py-24 max-[425px]:py-[30px] bg-lightGrey'>
+			<div className='max-w-[1320px] w-full px-5 mx-auto'>
+				<h2 className='font-semibold text-[48px] leading-[1.2] text-darkBlue max-[425px]:text-[32px] max-[320px]:text-[27px]'>All Posts</h2>
+				<div className='grid grid-cols-3 gap-8 mt-16 lg:grid-cols-2 lg:gap-4 md:grid-cols-1 md:mt-6'>
 					{dataAllPosts.map((post, index) => (
 						<div className='card'>
 							<div className='card-top'>
-								<img src={post.img} alt='' />
+								<img className='w-full h-auto' src={post.img} alt='' />
 							</div>
-							<div className='card-body'>
-								<h6 className='card-title'>{post.title}</h6>
-								<p className='card-text'>{post.text}</p>
-								<div className='card-auth'>
+							<div className='card-body bg-white p-8 md:p-4'>
+								<h6 className='font-semibold mb-4 text-[24px] leading-[36px] lsm:text-[18px] lsm:leading-[1.4]'>
+									{post.title}
+								</h6>
+								<p className='opacity-90 mb-6 lsm:text-[16px]'>{post.text}</p>
+								<div className='flex items-center gap-4'>
 									<Link to='/blogger/1'>
-										<img src={post.userImg} alt='' />
+										<img className='h-8 w-8' src={post.userImg} alt='' />
 									</Link>
 									<div>
 										<Link to='/blogger/1'>
 											<p>{post.userName}</p>
 										</Link>
-										<p className='date'>{post.date}</p>
+										<p className='text-gray-500 text-[14px]'>{post.date}</p>
 									</div>
 								</div>
 							</div>
