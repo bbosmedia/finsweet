@@ -6,7 +6,7 @@ const CompanyHero = () => {
 			<div className='max-w-[1320px] w-full px-5 mx-auto relative'>
 				<img
 					className='absolute right-5 top-0 rotate-90 lsm:hidden'
-					src="/images/btn-shape.png"
+					src='/images/btn-shape.png'
 					alt=''
 				/>
 				<div className='h-7 w-7 bg-siteOrange mb-6'></div>
@@ -21,9 +21,9 @@ const CompanyHero = () => {
 			</div>
 			<div className='max-w-[1320px] w-full px-5 mx-auto relative grid grid-cols-3 gap-3 lsm:grid-cols-1'>
 				<div className='bg-[linear-gradient(90deg,#FFA155_0%,#FFA155_25%,#FFE6D2_25%,#FFE6D2_75%,#444CFC_75%,#444CFC_100%)] w-full absolute -top-6 right-5 h-6 max-w-[346px] lsm:hidden' />
-			<img className='w-full' src="/images/home-about/1.jpg" alt='' />
-			<img className='w-full' src="/images/home-about/2.jpg" alt='' />
-			<img className='w-full' src="/images/home-about/3.jpg" alt='' />
+				<img className='w-full' src='/images/home-about/1.jpg' alt='' />
+				<img className='w-full' src='/images/home-about/2.jpg' alt='' />
+				<img className='w-full' src='/images/home-about/3.jpg' alt='' />
 			</div>
 		</header>
 	)

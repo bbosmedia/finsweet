@@ -9,8 +9,20 @@ import {
 import { Link } from 'react-router-dom'
 
 const mainLinks = ['Home', 'Service', 'Company', 'Career', 'Blog']
-const serviceLinks = ['Technical Support', 'Development', 'AWS/Azure', 'Consulting', 'Information Technology']
-const resourceLinks = ['FAQ', 'Blog', 'Help Center', 'Terms of Service', 'Privacy Policy']
+const serviceLinks = [
+	'Technical Support',
+	'Development',
+	'AWS/Azure',
+	'Consulting',
+	'Information Technology'
+]
+const resourceLinks = [
+	'FAQ',
+	'Blog',
+	'Help Center',
+	'Terms of Service',
+	'Privacy Policy'
+]
 
 const Footer = () => {
 	return (
@@ -18,7 +30,7 @@ const Footer = () => {
 			<div className='max-w-[1320px] w-full px-5 mx-auto pt-12 pb-16 relative grid gap-5 [grid-template-columns:1fr_1.3fr] md:grid-cols-1'>
 				<img
 					className='absolute top-0 left-5'
-					src="/images/btn-shape.png"
+					src='/images/btn-shape.png'
 					alt=''
 				/>
 				<div>
@@ -94,11 +106,7 @@ const Footer = () => {
 				<div className='max-w-[1320px] w-full px-5 mx-auto flex items-center justify-between py-5 lsm:flex-col lsm:gap-7'>
 					<div className='flex items-center gap-4 lsm:order-2 xsm:flex-col'>
 						<Link to='/'>
-							<img
-								className='h-[24.3px]'
-								src="/images/Logo-black.png"
-								alt=''
-							/>
+							<img className='h-[24.3px]' src='/images/Logo-black.png' alt='' />
 						</Link>
 						<p>&copy; {new Date().getFullYear()} Finsweet</p>
 					</div>

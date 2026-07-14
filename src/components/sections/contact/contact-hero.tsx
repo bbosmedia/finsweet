@@ -36,41 +36,67 @@ const ContactHero = () => {
 								<Form>
 									<div className='gap-6 flex flex-col mt-16 lsm:mt-5 max-w-[405px]'>
 										<div className='flex flex-col'>
-											<label className='text-siteDark mb-2 text-[14px] leading-[20px]' htmlFor='name'>Name</label>
+											<label
+												className='text-siteDark mb-2 text-[14px] leading-[20px]'
+												htmlFor='name'
+											>
+												Name
+											</label>
 											<Field
 												className='p-0 pb-2 outline-none border-0 border-b border-b-gray-300'
 												name='name'
 												placeholder='Name'
 											/>
 											{errors.name && touched.name && (
-												<p className='text-red-500 mt-1 text-[14px]'>{errors.name}</p>
+												<p className='text-red-500 mt-1 text-[14px]'>
+													{errors.name}
+												</p>
 											)}
 										</div>
 										<div className='flex flex-col'>
-											<label className='text-siteDark mb-2 text-[14px] leading-[20px]' htmlFor='email'>Email</label>
+											<label
+												className='text-siteDark mb-2 text-[14px] leading-[20px]'
+												htmlFor='email'
+											>
+												Email
+											</label>
 											<Field
 												className='p-0 pb-2 outline-none border-0 border-b border-b-gray-300'
 												name='email'
 												placeholder='Email'
 											/>
 											{errors.email && touched.email && (
-												<p className='text-red-500 mt-1 text-[14px]'>{errors.email}</p>
+												<p className='text-red-500 mt-1 text-[14px]'>
+													{errors.email}
+												</p>
 											)}
 										</div>
 
 										<div className='flex flex-col'>
-											<label className='text-siteDark mb-2 text-[14px] leading-[20px]' htmlFor='subject'>Subject</label>
+											<label
+												className='text-siteDark mb-2 text-[14px] leading-[20px]'
+												htmlFor='subject'
+											>
+												Subject
+											</label>
 											<Field
 												className='p-0 pb-2 outline-none border-0 border-b border-b-gray-300'
 												name='subject'
 												placeholder='Write your subject'
 											/>
 											{errors.subject && touched.subject && (
-												<p className='text-red-500 mt-1 text-[14px]'>{errors.subject}</p>
+												<p className='text-red-500 mt-1 text-[14px]'>
+													{errors.subject}
+												</p>
 											)}
 										</div>
 										<div className='flex flex-col'>
-											<label className='text-siteDark mb-2 text-[14px] leading-[20px]' htmlFor='message'>Message</label>
+											<label
+												className='text-siteDark mb-2 text-[14px] leading-[20px]'
+												htmlFor='message'
+											>
+												Message
+											</label>
 											<Field
 												as='textarea'
 												className='p-0 pb-2 outline-none border-0 border-b border-b-gray-300'
@@ -79,14 +105,16 @@ const ContactHero = () => {
 												placeholder='Type your Message'
 											/>
 											{errors.message && touched.message && (
-												<p className='text-red-500 mt-1 text-[14px]'>{errors.message}</p>
+												<p className='text-red-500 mt-1 text-[14px]'>
+													{errors.message}
+												</p>
 											)}
 										</div>
 									</div>
 									<button className='bg-main px-8 py-5 relative text-white mt-14'>
 										<img
 											className='absolute top-0 left-0'
-											src="/images/btn-shape.png"
+											src='/images/btn-shape.png'
 										/>
 										<span className='flex items-center gap-3'>
 											Send Message <BsArrowRight />
@@ -103,32 +131,54 @@ const ContactHero = () => {
 							<div>
 								<h5 className='text-white/70 text-[14px]'>Location</h5>
 								<div className='w-full my-3 bg-white opacity-[0.08] h-px'></div>
-								<h3 className='font-medium text-[18px] leading-[28px]'>DLF Cybercity, Bhubaneswar, India, &52050</h3>
+								<h3 className='font-medium text-[18px] leading-[28px]'>
+									DLF Cybercity, Bhubaneswar, India, &52050
+								</h3>
 							</div>
 							<div>
 								<h5 className='text-white/70 text-[14px]'>Working Hour</h5>
 								<div className='w-full my-3 bg-white opacity-[0.08] h-px'></div>
-								<h3 className='font-medium text-[18px] leading-[28px]'>Monday To Friday</h3>
-								<h3 className='font-medium text-[18px] leading-[28px]'>9:00 AM to 8:00 PM</h3>
-								<h5 className='text-white/70 text-[14px]'>Our Support Team is available 24Hrs</h5>
+								<h3 className='font-medium text-[18px] leading-[28px]'>
+									Monday To Friday
+								</h3>
+								<h3 className='font-medium text-[18px] leading-[28px]'>
+									9:00 AM to 8:00 PM
+								</h3>
+								<h5 className='text-white/70 text-[14px]'>
+									Our Support Team is available 24Hrs
+								</h5>
 							</div>
 							<div>
 								<h5 className='text-white/70 text-[14px]'>Contact Us</h5>
 								<div className='w-full my-3 bg-white opacity-[0.08] h-px'></div>
-								<h3 className='font-medium text-[18px] leading-[28px]'>020 7993 2905</h3>
+								<h3 className='font-medium text-[18px] leading-[28px]'>
+									020 7993 2905
+								</h3>
 								<h5 className='text-white/70 text-[14px]'>Hello@ether.com</h5>
 							</div>
 							<div className='flex gap-6 mt-14 lsm:mt-6'>
-								<a className='text-white/70 transition-[all] duration-[400ms] ease-in-out hover:text-white' href='#'>
+								<a
+									className='text-white/70 transition-[all] duration-[400ms] ease-in-out hover:text-white'
+									href='#'
+								>
 									<BsFacebook />
 								</a>
-								<a className='text-white/70 transition-[all] duration-[400ms] ease-in-out hover:text-white' href='#'>
+								<a
+									className='text-white/70 transition-[all] duration-[400ms] ease-in-out hover:text-white'
+									href='#'
+								>
 									<BsTwitter />
 								</a>
-								<a className='text-white/70 transition-[all] duration-[400ms] ease-in-out hover:text-white' href='#'>
+								<a
+									className='text-white/70 transition-[all] duration-[400ms] ease-in-out hover:text-white'
+									href='#'
+								>
 									<BsInstagram />
 								</a>
-								<a className='text-white/70 transition-[all] duration-[400ms] ease-in-out hover:text-white' href='#'>
+								<a
+									className='text-white/70 transition-[all] duration-[400ms] ease-in-out hover:text-white'
+									href='#'
+								>
 									<BsLinkedin />
 								</a>
 							</div>

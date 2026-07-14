@@ -3,7 +3,7 @@ import AuthorProfileHeader from '@/components/sections/blog/author-profile-heade
 import LatestPostsSection from '@/components/sections/home/latest-posts-section'
 
 const SingleBlogger = () => {
-  return (
+	return (
 		<main>
 			<AuthorProfileHeader />
 			<LatestPostsSection title='Blog posts from Javena' />

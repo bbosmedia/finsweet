@@ -1,4 +1,3 @@
-
 export interface ITeamMember {
 	img: string
 	name: string
@@ -15,7 +14,7 @@ export const companyTeam: ITeamMember[] = [
 		job: 'CEO',
 		instagram: 'instagram.com',
 		twitter: 'twitter.com',
-		linkedin: 'linkedin.com',
+		linkedin: 'linkedin.com'
 	},
 	{
 		img: '/images/company-team/2.jpg',
@@ -23,7 +22,7 @@ export const companyTeam: ITeamMember[] = [
 		job: 'CEO',
 		instagram: 'instagram.com',
 		twitter: 'twitter.com',
-		linkedin: 'linkedin.com',
+		linkedin: 'linkedin.com'
 	},
 	{
 		img: '/images/company-team/3.jpg',
@@ -31,7 +30,7 @@ export const companyTeam: ITeamMember[] = [
 		job: 'CEO',
 		instagram: 'instagram.com',
 		twitter: 'twitter.com',
-		linkedin: 'linkedin.com',
+		linkedin: 'linkedin.com'
 	},
 	{
 		img: '/images/company-team/4.jpg',
@@ -39,7 +38,7 @@ export const companyTeam: ITeamMember[] = [
 		job: 'CEO',
 		instagram: 'instagram.com',
 		twitter: 'twitter.com',
-		linkedin: 'linkedin.com',
+		linkedin: 'linkedin.com'
 	},
 	{
 		img: '/images/company-team/5.jpg',
@@ -47,7 +46,7 @@ export const companyTeam: ITeamMember[] = [
 		job: 'CEO',
 		instagram: 'instagram.com',
 		twitter: 'twitter.com',
-		linkedin: 'linkedin.com',
+		linkedin: 'linkedin.com'
 	},
 	{
 		img: '/images/company-team/6.jpg',
@@ -55,7 +54,7 @@ export const companyTeam: ITeamMember[] = [
 		job: 'CEO',
 		instagram: 'instagram.com',
 		twitter: 'twitter.com',
-		linkedin: 'linkedin.com',
+		linkedin: 'linkedin.com'
 	},
 	{
 		img: '/images/company-team/7.jpg',
@@ -63,7 +62,7 @@ export const companyTeam: ITeamMember[] = [
 		job: 'CEO',
 		instagram: 'instagram.com',
 		twitter: 'twitter.com',
-		linkedin: 'linkedin.com',
+		linkedin: 'linkedin.com'
 	},
 	{
 		img: '/images/company-team/8.jpg',
@@ -71,6 +70,6 @@ export const companyTeam: ITeamMember[] = [
 		job: 'CEO',
 		instagram: 'instagram.com',
 		twitter: 'twitter.com',
-		linkedin: 'linkedin.com',
-	},
+		linkedin: 'linkedin.com'
+	}
 ]

@@ -5,7 +5,9 @@ const CultureSection = () => {
 	return (
 		<section className='bg-lightGrey py-24 max-[425px]:py-[30px]'>
 			<div className='max-w-[1320px] w-full px-5 mx-auto'>
-				<h5 className='font-medium [letter-spacing:3px] uppercase opacity-[0.87] mb-4 text-black'>OUR WORK & CULTURE</h5>
+				<h5 className='font-medium [letter-spacing:3px] uppercase opacity-[0.87] mb-4 text-black'>
+					OUR WORK & CULTURE
+				</h5>
 				<h2 className='font-semibold text-[48px] leading-[1.2] text-darkBlue max-[425px]:text-[32px] max-[320px]:text-[27px] max-w-[754px]'>
 					Come and join a team of highly skilled professionals.
 				</h2>
@@ -19,7 +21,9 @@ const CultureSection = () => {
 					{companyCulture.map((item, index) => (
 						<div key={index} className='bg-white p-8'>
 							<img className='mb-2 h-[40px]' src={item.img} alt={item.title} />
-							<h6 className='font-semibold mb-2 leading-7 text-[16px]'>{item.title}</h6>
+							<h6 className='font-semibold mb-2 leading-7 text-[16px]'>
+								{item.title}
+							</h6>
 							<p className='text-gray-500 text-[14px]'>{item.text}</p>
 						</div>
 					))}

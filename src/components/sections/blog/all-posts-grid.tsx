@@ -1,12 +1,14 @@
 import React from 'react'
-import { dataAllPosts } from '@/data/all-posts-data';
-import { Link } from 'react-router-dom';
+import { dataAllPosts } from '@/data/all-posts-data'
+import { Link } from 'react-router-dom'
 
 const AllPostsGrid = () => {
-  return (
+	return (
 		<section className='py-24 max-[425px]:py-[30px] bg-lightGrey'>
 			<div className='max-w-[1320px] w-full px-5 mx-auto'>
-				<h2 className='font-semibold text-[48px] leading-[1.2] text-darkBlue max-[425px]:text-[32px] max-[320px]:text-[27px]'>All Posts</h2>
+				<h2 className='font-semibold text-[48px] leading-[1.2] text-darkBlue max-[425px]:text-[32px] max-[320px]:text-[27px]'>
+					All Posts
+				</h2>
 				<div className='grid grid-cols-3 gap-8 mt-16 lg:grid-cols-2 lg:gap-4 md:grid-cols-1 md:mt-6'>
 					{dataAllPosts.map((post, index) => (
 						<div key={index}>

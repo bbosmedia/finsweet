@@ -1,12 +1,12 @@
 import React from 'react'
-import { BsFacebook, BsInstagram, BsTwitter } from 'react-icons/bs';
+import { BsFacebook, BsInstagram, BsTwitter } from 'react-icons/bs'
 
 const AuthorProfileHeader = () => {
 	return (
 		<header className='py-24 max-[425px]:py-[30px] px-4 flex flex-col items-center'>
 			<img
 				className='w-full h-auto mb-12 md:mb-4 max-w-[320px] lsm:max-w-[180px]'
-				src="/images/blogger.png"
+				src='/images/blogger.png'
 				alt=''
 			/>
 			<h4 className='font-semibold text-siteDark text-[36px] leading-[54px]'>

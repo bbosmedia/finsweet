@@ -1,9 +1,5 @@
 import React, { useState } from 'react'
-import {
-	Deatils,
-	Requirements,
-	Responsibilities
-} from '@/data/job-detail-data'
+import { Deatils, Requirements, Responsibilities } from '@/data/job-detail-data'
 
 const JobDetailContent = () => {
 	const [active, setActive] = useState<string>('Details')

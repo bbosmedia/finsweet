@@ -20,7 +20,7 @@ const Navbar = () => {
 		<nav className='bg-darkBlue border-b border-b-white/5 z-[99]'>
 			<div className='max-w-[1320px] w-full px-5 mx-auto flex items-center justify-between h-[80px]'>
 				<Link to='/'>
-					<img src="/images/Logo.png" alt='Site Logo' />
+					<img src='/images/Logo.png' alt='Site Logo' />
 				</Link>
 				<button
 					className='border-none text-white outline-none hidden text-[24px] h-[80px] max-[990px]:block'
@@ -33,39 +33,71 @@ const Navbar = () => {
 						<AiOutlineClose />
 					</span>
 				</button>
-				<ul className={`${navListBase} ${active ? 'max-[900px]:translate-x-0' : ''}`}>
+				<ul
+					className={`${navListBase} ${
+						active ? 'max-[900px]:translate-x-0' : ''
+					}`}
+				>
 					<li>
-						<Link className={pathname === '/' ? navLinkActive : navLinkBase} to='/' onClick={() => setActive(false)}>
+						<Link
+							className={pathname === '/' ? navLinkActive : navLinkBase}
+							to='/'
+							onClick={() => setActive(false)}
+						>
 							Home
 						</Link>
 					</li>
 					<li>
-						<Link className={pathname === '/services' ? navLinkActive : navLinkBase} to='/services' onClick={() => setActive(false)}>
+						<Link
+							className={pathname === '/services' ? navLinkActive : navLinkBase}
+							to='/services'
+							onClick={() => setActive(false)}
+						>
 							Service
 						</Link>
 					</li>
 					<li>
-						<Link className={pathname === '/company' ? navLinkActive : navLinkBase} to='/company' onClick={() => setActive(false)}>
+						<Link
+							className={pathname === '/company' ? navLinkActive : navLinkBase}
+							to='/company'
+							onClick={() => setActive(false)}
+						>
 							Company
 						</Link>
 					</li>
 					<li>
-						<Link className={pathname === '/career' ? navLinkActive : navLinkBase} to='/career' onClick={() => setActive(false)}>
+						<Link
+							className={pathname === '/career' ? navLinkActive : navLinkBase}
+							to='/career'
+							onClick={() => setActive(false)}
+						>
 							Career
 						</Link>
 					</li>
 					<li>
-						<Link className={pathname === '/blog' ? navLinkActive : navLinkBase} to='/blog' onClick={() => setActive(false)}>
+						<Link
+							className={pathname === '/blog' ? navLinkActive : navLinkBase}
+							to='/blog'
+							onClick={() => setActive(false)}
+						>
 							Blog
 						</Link>
 					</li>
 					<li>
-						<Link className={pathname === '/contact' ? navLinkActive : navLinkBase} to='/contact' onClick={() => setActive(false)}>
+						<Link
+							className={pathname === '/contact' ? navLinkActive : navLinkBase}
+							to='/contact'
+							onClick={() => setActive(false)}
+						>
 							Contact Us
 						</Link>
 					</li>
 					<li>
-						<Link className={`${navLinkBase} !text-[#FFA155] !text-white gap-1`} to='/' onClick={() => setActive(false)}>
+						<Link
+							className={`${navLinkBase} !text-[#FFA155] !text-white gap-1`}
+							to='/'
+							onClick={() => setActive(false)}
+						>
 							Clone Project <BsArrowRight />
 						</Link>
 					</li>

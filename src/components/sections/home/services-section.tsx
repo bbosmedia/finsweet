@@ -7,7 +7,9 @@ const ServicesSection = () => {
 	return (
 		<section className='py-24 max-[425px]:py-[30px] bg-siteOrange'>
 			<div className='max-w-[1320px] w-full px-5 mx-auto'>
-				<span className='font-medium [letter-spacing:3px] uppercase opacity-[0.87] mb-4 text-black'>Our Service</span>
+				<span className='font-medium [letter-spacing:3px] uppercase opacity-[0.87] mb-4 text-black'>
+					Our Service
+				</span>
 				<h3 className='font-semibold text-[48px] leading-[1.2] text-darkBlue max-[425px]:text-[32px] max-[320px]:text-[27px] max-w-[777px]'>
 					We build software solutions that solve client's business challenges
 				</h3>
@@ -16,7 +18,7 @@ const ServicesSection = () => {
 					<div className='bg-white p-8'>
 						<img
 							className='mb-4 w-[47px]'
-							src="/images/home-services/1.png"
+							src='/images/home-services/1.png'
 							alt=''
 						/>
 						<h5 className='font-semibold leading-[28px]'>Technical support</h5>
@@ -31,7 +33,7 @@ const ServicesSection = () => {
 					<div className='bg-white p-8'>
 						<img
 							className='mb-4 w-[47px]'
-							src="/images/home-services/2.png"
+							src='/images/home-services/2.png'
 							alt=''
 						/>
 						<h5 className='font-semibold leading-[28px]'>Testing Management</h5>
@@ -46,7 +48,7 @@ const ServicesSection = () => {
 					<div className='bg-white p-8'>
 						<img
 							className='mb-4 w-[47px]'
-							src="/images/home-services/3.png"
+							src='/images/home-services/3.png'
 							alt=''
 						/>
 						<h5 className='font-semibold leading-[28px]'>Development</h5>

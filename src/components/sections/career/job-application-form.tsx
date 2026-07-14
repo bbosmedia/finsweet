@@ -21,7 +21,9 @@ const JobApplicationForm = () => {
 	return (
 		<section className='py-24 max-[425px]:py-[30px]'>
 			<div className='max-w-[1320px] w-full px-5 mx-auto'>
-				<h2 className='font-semibold text-[48px] leading-[1.2] text-darkBlue max-[425px]:text-[32px] max-[320px]:text-[27px] mb-7 lsm:mb-4'>Apply Now</h2>
+				<h2 className='font-semibold text-[48px] leading-[1.2] text-darkBlue max-[425px]:text-[32px] max-[320px]:text-[27px] mb-7 lsm:mb-4'>
+					Apply Now
+				</h2>
 				<Formik
 					initialValues={{
 						firstname: '',
@@ -45,7 +47,9 @@ const JobApplicationForm = () => {
 										placeholder='First Name'
 									/>
 									{errors.firstname && touched.firstname && (
-										<p className='text-red-500 font-medium mt-1'>{errors.firstname}</p>
+										<p className='text-red-500 font-medium mt-1'>
+											{errors.firstname}
+										</p>
 									)}
 								</div>
 
@@ -56,7 +60,9 @@ const JobApplicationForm = () => {
 										placeholder='Last Name'
 									/>
 									{errors.lastname && touched.lastname && (
-										<p className='text-red-500 font-medium mt-1'>{errors.lastname}</p>
+										<p className='text-red-500 font-medium mt-1'>
+											{errors.lastname}
+										</p>
 									)}
 								</div>
 
@@ -67,7 +73,9 @@ const JobApplicationForm = () => {
 										placeholder='Email Id'
 									/>
 									{errors.email && touched.email && (
-										<p className='text-red-500 font-medium mt-1'>{errors.email}</p>
+										<p className='text-red-500 font-medium mt-1'>
+											{errors.email}
+										</p>
 									)}
 								</div>
 
@@ -78,7 +86,9 @@ const JobApplicationForm = () => {
 										placeholder='Mobile No'
 									/>
 									{errors.mobile && touched.mobile && (
-										<p className='text-red-500 font-medium mt-1'>{errors.mobile}</p>
+										<p className='text-red-500 font-medium mt-1'>
+											{errors.mobile}
+										</p>
 									)}
 								</div>
 							</div>
@@ -90,7 +100,9 @@ const JobApplicationForm = () => {
 								placeholder='Why do you thing you are good fit for Ether?'
 							/>
 							{errors.message && touched.message && (
-								<p className='text-red-500 font-medium mt-1'>{errors.message}</p>
+								<p className='text-red-500 font-medium mt-1'>
+									{errors.message}
+								</p>
 							)}
 							<div className='flex gap-6 mt-8 lsm:mt-4'>
 								<Field
@@ -107,7 +119,7 @@ const JobApplicationForm = () => {
 							<button className='bg-main px-8 py-5 relative text-white mt-14'>
 								<img
 									className='absolute top-0 left-0'
-									src="/images/btn-shape.png"
+									src='/images/btn-shape.png'
 								/>
 								<span className='flex items-center gap-3'>
 									Submit Application <BsArrowRight />

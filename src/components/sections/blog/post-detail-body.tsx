@@ -4,14 +4,14 @@ const PostDetailBody = () => {
 	return (
 		<section>
 			<div className='max-w-[1320px] w-full px-5 mx-auto flex flex-col items-center'>
-			<div className='w-full h-full relative mb-24 md:mb-6'>
-				<img
-					className='w-full object-cover h-[346px]'
-					src="/images/company-vision.png"
-					alt=''
-				/>
-				<div className='absolute w-full right-0 h-[17px] max-w-[346px] bottom-[-17px] bg-[linear-gradient(90deg,#FFA155_0%,#FFA155_25%,#FFE6D2_25%,#FFE6D2_75%,#444CFC_75%,#444CFC_100%)] md:hidden' />
-			</div>
+				<div className='w-full h-full relative mb-24 md:mb-6'>
+					<img
+						className='w-full object-cover h-[346px]'
+						src='/images/company-vision.png'
+						alt=''
+					/>
+					<div className='absolute w-full right-0 h-[17px] max-w-[346px] bottom-[-17px] bg-[linear-gradient(90deg,#FFA155_0%,#FFA155_25%,#FFE6D2_25%,#FFE6D2_75%,#444CFC_75%,#444CFC_100%)] md:hidden' />
+				</div>
 				<div className='max-w-[842px]'>
 					<h3 className='text-siteDark mb-6 font-semibold md:mb-4 text-[36px] leading-[54px] md:text-[24px] md:leading-[1.4]'>
 						Transform Your Idea Into Reality with Ether a Leading Digital Agency
