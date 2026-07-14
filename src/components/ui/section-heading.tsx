@@ -29,7 +29,7 @@ const SectionHeading = ({
 			</span>
 			<h2
 				className={cn(
-					'font-semibold text-[48px] leading-[1.2] max-[425px]:text-[32px] max-[320px]:text-[27px]',
+					'font-semibold text-[48px] leading-[1.2] max-md:text-[36px] max-lsm:text-[28px] max-[425px]:text-[32px] max-[320px]:text-[27px]',
 					titleColor
 				)}
 			>

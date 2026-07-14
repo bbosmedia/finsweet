@@ -3,9 +3,9 @@ import { BsFacebook, BsInstagram, BsTwitter } from 'react-icons/bs'
 
 const AuthorProfileHeader = () => {
 	return (
-		<header className='py-24 max-[425px]:py-[30px] px-4 flex flex-col items-center'>
+		<header className='py-24 max-[425px]:py-[30px] max-md:py-16 max-xlsm:py-10 px-4 max-md:px-5 flex flex-col items-center'>
 			<img
-				className='w-full h-auto mb-12 md:mb-4 max-w-[320px] lsm:max-w-[180px]'
+				className='w-full h-auto mb-12 max-md:mb-4 max-w-[320px] max-lsm:max-w-[180px]'
 				src='/images/blogger.webp'
 				alt='Javena Melo'
 			/>

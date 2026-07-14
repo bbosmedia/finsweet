@@ -27,20 +27,20 @@ const services = [
 
 const ServicesSection = () => {
 	return (
-		<section className='py-24 max-[425px]:py-[30px] bg-siteOrange'>
+		<section className='py-24 max-[425px]:py-[30px] bg-siteOrange max-md:py-16 max-xlsm:py-10'>
 			<Container>
 				<SectionHeading
 					subtitle='Our Service'
 					title="We build software solutions that solve client's business challenges"
-					className='max-w-[777px]'
+					className='max-w-[777px] mb-8 max-lsm:mb-5'
 				/>
 				<PrimaryButton text='Start Project' link='/' />
-				<div className='grid gap-8 grid-cols-3 mt-20 md:grid-cols-1 lsm:mt-7'>
+				<div className='grid gap-8 grid-cols-3 mt-20 max-md:grid-cols-1 max-md:gap-6 max-lsm:mt-7'>
 					{services.map(service => (
 						<div key={service.title} className='bg-white p-8'>
 							<img className='mb-4 w-[47px]' src={service.icon} alt='' width='47' height='47' />
-							<h3 className='font-semibold leading-[28px]'>{service.title}</h3>
-							<p className='mb-6 leading-[24px] text-[#4B5563]'>
+						<h3 className='font-semibold leading-[28px] mb-2'>{service.title}</h3>
+						<p className='mb-6 leading-[24px] text-[#4B5563]'>
 								{service.description}
 							</p>
 							<ReadMoreLink />

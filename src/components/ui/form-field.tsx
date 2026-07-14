@@ -27,7 +27,7 @@ const FormField = ({
 		<div>
 			<Field
 				className={cn(
-					'py-8 px-10 w-full bg-lightGrey font-medium text-siteDark border-0 outline-none inline-block lsm:py-2 lsm:px-3 lsm:font-normal placeholder:text-siteDark placeholder:opacity-80',
+					'py-8 px-10 w-full bg-lightGrey font-medium text-siteDark border-0 outline-none inline-block max-lsm:py-2 max-lsm:px-3 max-lsm:font-normal placeholder:text-siteDark placeholder:opacity-80',
 					className
 				)}
 				name={name}

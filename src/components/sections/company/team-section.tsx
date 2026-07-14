@@ -6,26 +6,26 @@ import { companyTeam } from '@/data/team-data'
 
 const TeamSection = () => {
 	return (
-		<section>
+		<section className='max-md:py-10 max-xlsm:py-6'>
 			<Container>
 				<SectionHeading
 					subtitle='Meet Our Team'
 					title='Teamwork is the only way we work'
 					className='max-w-[624px]'
 				/>
-				<p className='text-gray-500 mt-6 mb-16 lsm:mb-6 max-w-[505.5px]'>
+				<p className='text-gray-500 mt-6 mb-16 max-lsm:mb-6 max-w-[505.5px]'>
 					Through True Rich Attended does no end it his mother since real had
 					half every him case in packages enquire we up ecstatic unsatiable.
 				</p>
 			</Container>
-			<Container className='grid grid-cols-4 relative md:grid-cols-2 lsm:grid-cols-1'>
+			<Container className='grid grid-cols-4 relative max-md:grid-cols-2 max-lsm:grid-cols-1'>
 				{companyTeam.map((item, index) => (
 					<div
 						key={index}
-						className='group relative w-full overflow-hidden h-[320px] md:h-auto md:w-auto'
+						className='group relative w-full overflow-hidden h-[320px] max-md:h-auto max-md:w-auto'
 					>
 						<img
-							className='h-full w-full md:w-full md:h-auto'
+							className='h-full w-full max-md:w-full max-md:h-auto'
 							src={item.img}
 							alt={item.name}
 						/>

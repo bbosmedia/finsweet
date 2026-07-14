@@ -14,7 +14,7 @@ const PrimaryButton: FC<IPrimaryButton> = ({ link, text }) => {
 			className='font-medium text-white py-5 px-8 relative flex items-center bg-main text-[16px] gap-[10px] leading-[24px] w-fit transition-all duration-[400ms] ease-in-out hover:shadow-xl hover:-translate-y-[2px]'
 		>
 			<img
-				className='absolute top-0 left-0'
+				className='absolute top-0 left-0 max-md:hidden'
 				alt=''
 				src='/images/btn-shape.webp'
 				srcSet='/images/btn-shape@2x.webp 2x'

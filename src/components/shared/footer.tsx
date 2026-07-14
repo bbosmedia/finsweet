@@ -26,19 +26,19 @@ const resourceLinks = [
 
 const Footer = () => {
 	return (
-		<footer className='mt-24 md:mt-10 lsm:mt-4'>
-			<div className='max-w-[1320px] w-full px-5 mx-auto pt-12 pb-16 relative grid gap-5 [grid-template-columns:1fr_1.3fr] md:grid-cols-1'>
+		<footer className='mt-24 max-md:mt-10 max-lsm:mt-4 max-xlsm:mt-2'>
+			<div className='max-w-[1320px] w-full px-5 mx-auto pt-12 pb-16 relative grid gap-5 [grid-template-columns:1fr_1.3fr] max-md:grid-cols-1'>
 			<img
-				className='absolute top-0 left-5'
+				className='absolute top-0 left-5 max-md:hidden'
 				src='/images/btn-shape.webp'
 				srcSet='/images/btn-shape@2x.webp 2x'
 				alt=''
 			/>
 				<div>
-					<h2 className='text-siteDark font-semibold mb-10 max-w-[453px] text-[48px] leading-[1.2]'>
+					<h2 className='text-siteDark font-semibold mb-10 max-w-[453px] text-[48px] leading-[1.2] max-md:text-[36px] max-md:leading-[1.3] max-lsm:text-[28px]'>
 						Let's make something special
 					</h2>
-					<h3 className='text-siteDark mb-7 leading-[1.5] text-[24px]'>
+					<h3 className='text-siteDark mb-7 leading-[1.5] text-[24px] max-lsm:text-[20px]'>
 						Let's talk! 🤙
 					</h3>
 					<div className='mb-4'>
@@ -55,7 +55,7 @@ const Footer = () => {
 					</p>
 				</div>
 				<div className='flex flex-col justify-between gap-5'>
-					<div className='grid grid-cols-3 lsm:grid-cols-1 lsm:gap-8'>
+					<div className='grid grid-cols-3 max-md:grid-cols-2 max-lsm:grid-cols-1 max-lsm:gap-8'>
 						<ul className='flex flex-col gap-3'>
 							{mainLinks.map(link => (
 								<li key={link}>
@@ -94,7 +94,7 @@ const Footer = () => {
 						</div>
 					</div>
 					<Link
-						className='flex items-center gap-2 hover:text-main self-end'
+						className='flex items-center gap-2 hover:text-main self-end max-md:self-start'
 						to='/contact'
 					>
 						<div className='w-[50px] h-[14px] bg-[linear-gradient(90deg,#FFD3AF_0%,#FFD3AF_30%,#666DFF_30%,#666DFF_100%)]'></div>
@@ -104,8 +104,8 @@ const Footer = () => {
 				</div>
 			</div>
 			<div className='bg-siteOrange'>
-				<div className='max-w-[1320px] w-full px-5 mx-auto flex items-center justify-between py-5 lsm:flex-col lsm:gap-7'>
-					<div className='flex items-center gap-4 lsm:order-2 xsm:flex-col'>
+				<div className='max-w-[1320px] w-full px-5 mx-auto flex items-center justify-between py-5 max-lsm:flex-col max-lsm:gap-7'>
+					<div className='flex items-center gap-4 max-lsm:order-2 max-xsm:flex-col'>
 						<Link to='/' aria-label='Home'>
 							<img
 								className='h-[24.3px]'
@@ -115,7 +115,7 @@ const Footer = () => {
 						</Link>
 						<p>&copy; {new Date().getFullYear()} Finsweet</p>
 					</div>
-					<div className='flex items-center gap-3 lsm:order-1'>
+					<div className='flex items-center gap-3 max-lsm:order-1'>
 						<a href='facebook.com' aria-label='Facebook'>
 							<BsFacebook />
 						</a>

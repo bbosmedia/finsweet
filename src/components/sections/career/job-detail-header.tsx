@@ -3,14 +3,14 @@ import PrimaryButton from '@/components/ui/primary-button'
 
 const JobDetailHeader = () => {
 	return (
-		<section className='py-24 max-[425px]:py-[30px]'>
+		<section className='py-24 max-[425px]:py-[30px] max-md:py-16 max-xlsm:py-10'>
 			<div className='max-w-[1320px] w-full px-5 mx-auto max-w-[1100px]'>
-				<div className='grid grid-cols-2 gap-5 md:grid-cols-1'>
+				<div className='grid grid-cols-2 gap-5 max-md:grid-cols-1'>
 					<div>
 						<h3 className='font-medium [letter-spacing:3px] uppercase opacity-[0.87] mb-4 text-black'>
 							CAREER AT Ether
 						</h3>
-						<h2 className='font-semibold text-[48px] leading-[1.2] text-darkBlue max-[425px]:text-[32px] max-[320px]:text-[27px]'>
+						<h2 className='font-semibold text-[48px] leading-[1.2] text-darkBlue max-md:text-[36px] max-lsm:text-[28px] max-[425px]:text-[32px] max-[320px]:text-[27px]'>
 							Full Stack Developer
 						</h2>
 						<p className='opacity-90 mb-10 max-w-[430px]'>
@@ -19,9 +19,9 @@ const JobDetailHeader = () => {
 						</p>
 						<PrimaryButton link='' text='Apply Now' />
 					</div>
-					<div className='bg-siteOrange relative p-20 flex flex-col gap-6 lsm:p-5 sm:gap-3'>
+					<div className='bg-siteOrange relative p-20 flex flex-col gap-6 max-lsm:p-5 max-sm:gap-3 max-md:p-10'>
 						<img
-							className='absolute right-0 top-0 rotate-90 xlsm:hidden'
+							className='absolute right-0 top-0 rotate-90 max-xlsm:hidden'
 							src='/images/btn-shape.webp'
 							srcSet='/images/btn-shape@2x.webp 2x'
 							alt=''

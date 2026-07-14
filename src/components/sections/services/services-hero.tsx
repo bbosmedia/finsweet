@@ -8,15 +8,15 @@ import { serviceHeaderLinks } from '@/data/services-hero-data'
 
 const ServicesHero = () => {
 	return (
-		<header className='py-24 max-[425px]:py-[30px] bg-siteOrange'>
-			<Container
-				className='grid md:grid-cols-1 md:gap-6'
-				style={{ gridTemplateColumns: '1.2fr 1fr' }}
-			>
+		<header className='py-24 max-[425px]:py-[30px] bg-siteOrange max-md:py-16 max-xlsm:py-10'>
+		<Container
+			className='grid grid-cols-[1.2fr_1fr] max-md:grid-cols-1 max-md:gap-6'
+		>
 				<div>
 					<SectionHeading
 						subtitle='Our Services'
 						title='We Build Software Solutionthat Solve Clients Business Challenges'
+						className='mb-6 max-lsm:mb-4'
 					/>
 					<p className='text-gray-500 block my-6 max-w-[624px]'>
 						Through True Rich Attended does no end it his mother since

@@ -6,13 +6,13 @@ import { AiOutlineClose } from 'react-icons/ai'
 import { cn } from '@/lib/utils'
 
 const navListBase =
-	'flex gap-[32px] items-center transition-all duration-[400ms] ease-in-out max-[900px]:absolute max-[900px]:left-0 max-[900px]:bg-darkBlue max-[900px]:flex-col max-[900px]:py-5 max-[900px]:w-full max-[900px]:gap-5 max-[900px]:top-[80px] max-[900px]:h-[calc(100%-80px)] max-[900px]:-translate-x-full max-[900px]:z-[99]'
+	'flex gap-[32px] items-center transition-all duration-[400ms] ease-in-out max-[990px]:absolute max-[990px]:left-0 max-[990px]:bg-darkBlue max-[990px]:flex-col max-[990px]:py-5 max-[990px]:w-full max-[990px]:gap-5 max-[990px]:top-[80px] max-[990px]:h-[calc(100%-80px)] max-[990px]:-translate-x-full max-[990px]:z-[99] max-[990px]:px-5'
 
 const navLinkBase =
-	'h-[80px] flex items-center text-white/70 font-normal border-t-[3px] border-t-transparent transition-all duration-[400ms] ease-in-out max-[990px]:h-auto hover:text-white hover:border-t-[#FFA155] max-[900px]:hover:border-none'
+	'h-[80px] flex items-center text-white/70 font-normal border-t-[3px] border-t-transparent transition-all duration-[400ms] ease-in-out max-[990px]:h-auto max-[990px]:py-2 hover:text-white hover:border-t-[#FFA155] max-[990px]:hover:border-none'
 
 const navLinkActive =
-	'h-[80px] flex items-center text-white font-normal border-t-[3px] border-t-[#FFA155] transition-all duration-[400ms] ease-in-out max-[990px]:h-auto hover:text-white hover:border-t-[#FFA155] max-[900px]:border-none max-[900px]:hover:border-none'
+	'h-[80px] flex items-center text-white font-normal border-t-[3px] border-t-[#FFA155] transition-all duration-[400ms] ease-in-out max-[990px]:h-auto max-[990px]:py-2 hover:text-white hover:border-t-[#FFA155] max-[990px]:border-none max-[990px]:hover:border-none'
 
 const navLinks = [
 	{ path: '/', label: 'Home' },
@@ -48,7 +48,7 @@ const Navbar = () => {
 						<AiOutlineClose />
 					</span>
 				</button>
-				<ul className={cn(navListBase, active && 'max-[900px]:translate-x-0')}>
+				<ul className={cn(navListBase, active && 'max-[990px]:translate-x-0')}>
 					{navLinks.map(link => (
 						<li key={link.path}>
 							<Link

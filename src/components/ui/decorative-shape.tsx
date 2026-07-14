@@ -8,7 +8,7 @@ interface DecorativeShapeProps {
 const DecorativeShape = ({ className }: DecorativeShapeProps) => {
 	return (
 		<img
-			className={cn('absolute right-5 top-0 rotate-90', className)}
+			className={cn('absolute right-5 top-0 rotate-90 max-md:hidden', className)}
 			src='/images/btn-shape.webp'
 			srcSet='/images/btn-shape@2x.webp 2x'
 			alt=''

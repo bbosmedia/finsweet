@@ -21,9 +21,9 @@ const SignupSchema = Yup.object().shape({
 
 const JobApplicationForm = () => {
 	return (
-		<section className='py-24 max-[425px]:py-[30px]'>
+		<section className='py-24 max-[425px]:py-[30px] max-md:py-16 max-xlsm:py-10'>
 			<Container>
-				<h2 className='font-semibold text-[48px] leading-[1.2] text-darkBlue max-[425px]:text-[32px] max-[320px]:text-[27px] mb-7 lsm:mb-4'>
+				<h2 className='font-semibold text-[48px] leading-[1.2] text-darkBlue max-md:text-[36px] max-lsm:text-[28px] max-[425px]:text-[32px] max-[320px]:text-[27px] mb-7 max-lsm:mb-4'>
 					Apply Now
 				</h2>
 				<Formik
@@ -42,7 +42,7 @@ const JobApplicationForm = () => {
 				>
 					{({ errors, touched }) => (
 						<Form>
-							<div className='grid grid-cols-2 gap-8 mb-8 md:grid-cols-1 lsm:gap-4 lsm:mb-4'>
+							<div className='grid grid-cols-2 gap-8 mb-8 max-md:grid-cols-1 max-lsm:gap-4 max-lsm:mb-4'>
 								<FormField
 									name='firstname'
 									placeholder='First Name'
@@ -76,7 +76,7 @@ const JobApplicationForm = () => {
 								error={errors.message}
 								touched={touched.message}
 							/>
-							<div className='flex gap-6 mt-8 lsm:mt-4'>
+							<div className='flex gap-6 mt-8 max-lsm:mt-4'>
 								<FormField
 									type='checkbox'
 									name='confirm'

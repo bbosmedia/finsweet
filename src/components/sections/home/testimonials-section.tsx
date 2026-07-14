@@ -4,15 +4,14 @@ import TestimonialSlider from '@/components/sections/home/testimonial-slider'
 
 const TestimonialsSection = () => {
 	return (
-		<section className='py-24 max-[425px]:py-[30px] bg-lightGrey'>
+		<section className='py-24 max-[425px]:py-[30px] bg-lightGrey max-md:py-16 max-xlsm:py-10'>
 			<Container>
-				<div
-					className='grid gap-5 md:gap-7 md:grid-cols-1'
-					style={{ gridTemplateColumns: '50% 50%' }}
-				>
+			<div
+				className='grid gap-5 max-md:gap-7 grid-cols-2 max-md:grid-cols-1'
+			>
 					<div>
 						<div className='h-4 w-4 bg-main mb-4'></div>
-						<h2 className='font-semibold text-[48px] leading-[1.2] text-darkBlue max-[425px]:text-[32px] max-[320px]:text-[27px] mb-4 max-w-[492px]'>
+						<h2 className='font-semibold text-[48px] leading-[1.2] text-darkBlue max-md:text-[36px] max-lsm:text-[28px] max-[425px]:text-[32px] max-[320px]:text-[27px] mb-4 max-w-[492px]'>
 							Our customers love what we do
 						</h2>
 						<span className='font-medium mb-4 block text-[18px] leading-[28px]'>

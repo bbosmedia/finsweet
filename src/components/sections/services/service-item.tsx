@@ -14,28 +14,28 @@ const ServiceItem = ({
 
 	return (
 		<section
-			className='pb-24 lg:pt-24 md:py-12 lsm:py-6'
+			className='pb-24 max-lg:pt-24 max-md:py-12 max-lsm:py-6 max-xlsm:py-4'
 			style={{ backgroundColor: item.color }}
 		>
-			<Container className='flex gap-5 justify-between items-center lg:flex-col'>
+			<Container className='flex gap-5 justify-between items-center max-lg:flex-col'>
 				<div
 					className={cn(
-						'max-w-[624px] lg:w-full lg:max-w-none',
-						isEven && 'order-2 lg:order-1'
+						'max-w-[624px] max-lg:w-full max-lg:max-w-none',
+						isEven && 'order-2 max-lg:order-1'
 					)}
 				>
-					<h4 className='text-siteDark opacity-90 font-semibold mb-4 text-[24px] leading-[36px] lsm:mb-3 lsm:text-[18px] lsm:leading-[1.4]'>
+					<h4 className='text-siteDark opacity-90 font-semibold mb-4 text-[24px] leading-[36px] max-lsm:mb-3 max-lsm:text-[18px] max-lsm:leading-[1.4]'>
 						{item.name}
 					</h4>
-					<h2 className='text-siteDark font-semibold mb-6 text-[36px] leading-[54px] lsm:mb-3 lsm:text-[24px] lsm:leading-[1.4]'>
+					<h2 className='text-siteDark font-semibold mb-6 text-[36px] leading-[54px] max-lsm:mb-3 max-lsm:text-[24px] max-lsm:leading-[1.4]'>
 						{item.title}
 					</h2>
 					<p className='text-gray-500'>{item.text}</p>
 				</div>
 				<img
 					className={cn(
-						'max-w-[515px] lg:w-full lg:max-w-none',
-						isEven && 'order-1 lg:order-2'
+						'max-w-[515px] max-lg:w-full max-lg:max-w-none',
+						isEven && 'order-1 max-lg:order-2'
 					)}
 					src={item.img}
 					alt={item.name}

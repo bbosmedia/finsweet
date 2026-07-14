@@ -6,12 +6,12 @@ import SocialIcons from '@/components/ui/social-icons'
 
 const ContactHero = () => {
 	return (
-		<header className='py-24 max-[425px]:py-[30px]'>
+		<header className='py-24 max-[425px]:py-[30px] max-md:py-16 max-xlsm:py-10'>
 			<Container>
-				<div className='grid grid-cols-[1.2fr_1fr] gap-5 md:grid-cols-1 md:gap-7'>
+				<div className='grid grid-cols-[1.2fr_1fr] gap-5 max-md:grid-cols-1 max-md:gap-7'>
 					<div>
 						<div className='h-7 w-7 bg-siteOrange mb-6'></div>
-						<h2 className='font-semibold text-[48px] leading-[1.2] text-darkBlue max-[425px]:text-[32px] max-[320px]:text-[27px] mb-6'>
+						<h2 className='font-semibold text-[48px] leading-[1.2] text-darkBlue max-md:text-[36px] max-lsm:text-[28px] max-[425px]:text-[32px] max-[320px]:text-[27px] mb-6'>
 							Have a Question ? <br /> Let's Get in Touch with us 👋
 						</h2>
 						<p className='text-gray-500 block mb-8 max-w-[719px]'>
@@ -31,7 +31,7 @@ const ContactHero = () => {
 						>
 							{({ errors, touched }) => (
 								<Form>
-									<div className='gap-6 flex flex-col mt-16 lsm:mt-5 max-w-[405px]'>
+									<div className='gap-6 flex flex-col mt-16 max-lsm:mt-5 max-w-[405px] max-md:max-w-full'>
 										<div className='flex flex-col'>
 											<label
 												className='text-siteDark mb-2 text-[14px] leading-[20px]'
@@ -113,10 +113,10 @@ const ContactHero = () => {
 							)}
 						</Formik>
 					</div>
-					<div className='bg-main/80 mt-6 ml-6 py-20 relative px-24 text-white lg:px-14 md:mt-0 md:ml-0 lsm:py-6 lsm:px-6'>
-						<div className='bg-[linear-gradient(90deg,#FFD3AF_0%,#FFD3AF_25%,#8389FF_25%,#8389FF_55%,#FFA155_55%,#FFA155_100%)] -top-6 right-0 absolute h-6 w-[133px] md:hidden' />
-						<div className='bg-[linear-gradient(180deg,#FFA155_0%,#FFA155_25%,#FFD3AF_25%,#FFD3AF_75%,#3A41DC_75%,#3A41DC_100%)] -left-6 bottom-0 absolute w-6 h-[186px] md:hidden' />
-						<div className='w-full flex flex-col gap-6 lsm:gap-5 max-w-[280px]'>
+					<div className='bg-main/80 mt-6 max-md:mt-0 py-20 relative px-24 text-white max-lg:px-14 max-lsm:py-6 max-lsm:px-6'>
+						<div className='bg-[linear-gradient(90deg,#FFD3AF_0%,#FFD3AF_25%,#8389FF_25%,#8389FF_55%,#FFA155_55%,#FFA155_100%)] -top-6 right-0 absolute h-6 w-[133px] max-md:hidden' />
+						<div className='bg-[linear-gradient(180deg,#FFA155_0%,#FFA155_25%,#FFD3AF_25%,#FFD3AF_75%,#3A41DC_75%,#3A41DC_100%)] -left-6 bottom-0 absolute w-6 h-[186px] max-md:hidden' />
+						<div className='w-full flex flex-col gap-6 max-lsm:gap-5 max-w-[280px]'>
 							<div>
 								<p className='text-white/70 text-[14px]'>Location</p>
 								<div className='w-full my-3 bg-white opacity-[0.08] h-px'></div>
@@ -149,7 +149,7 @@ const ContactHero = () => {
 								icons={['facebook', 'twitter', 'instagram', 'linkedin']}
 								variant='light'
 								hoverColor='hover:text-white'
-								className='mt-14 lsm:mt-6'
+								className='mt-14 max-lsm:mt-6'
 							/>
 						</div>
 					</div>
