@@ -4,11 +4,12 @@ const CompanyHero = () => {
 	return (
 		<header className='pt-24 lsm:pt-10'>
 			<div className='max-w-[1320px] w-full px-5 mx-auto relative'>
-				<img
-					className='absolute right-5 top-0 rotate-90 lsm:hidden'
-					src='/images/btn-shape.webp'
-					alt=''
-				/>
+			<img
+				className='absolute right-5 top-0 rotate-90 lsm:hidden'
+				src='/images/btn-shape.webp'
+				srcSet='/images/btn-shape@2x.webp 2x'
+				alt=''
+			/>
 				<div className='h-7 w-7 bg-siteOrange mb-6'></div>
 				<h2 className='font-semibold text-[48px] leading-[1.2] text-darkBlue max-[425px]:text-[32px] max-[320px]:text-[27px] max-w-[664px]'>
 					Award-winning Company seen and used by millions around the world.

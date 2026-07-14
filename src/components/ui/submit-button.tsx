@@ -21,6 +21,7 @@ const SubmitButton = ({
 			<img
 				className='absolute top-0 left-0'
 				src='/images/btn-shape.webp'
+				srcSet='/images/btn-shape@2x.webp 2x'
 				alt=''
 			/>
 			<span className='flex items-center gap-3'>

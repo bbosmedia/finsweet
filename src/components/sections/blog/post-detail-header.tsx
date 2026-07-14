@@ -5,11 +5,12 @@ const PostDetailHeader = () => {
 		<header className='py-24 max-[425px]:py-[30px]'>
 			<div className='max-w-[1320px] w-full px-5 mx-auto relative'>
 				<div className='h-7 w-7 bg-siteOrange mb-6'></div>
-				<img
-					className='absolute top-0 right-0 rotate-90 md:hidden'
-					src='/images/btn-shape.webp'
-					alt=''
-				/>
+			<img
+				className='absolute top-0 right-0 rotate-90 md:hidden'
+				src='/images/btn-shape.webp'
+				srcSet='/images/btn-shape@2x.webp 2x'
+				alt=''
+			/>
 				<h2 className='font-semibold text-[48px] leading-[1.2] text-darkBlue max-[425px]:text-[32px] max-[320px]:text-[27px] mb-6 md:mb-4 max-w-[729px]'>
 					Breaking the code How did we build our Figma plugin
 				</h2>

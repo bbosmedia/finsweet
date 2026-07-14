@@ -28,11 +28,12 @@ const Footer = () => {
 	return (
 		<footer className='mt-24 md:mt-10 lsm:mt-4'>
 			<div className='max-w-[1320px] w-full px-5 mx-auto pt-12 pb-16 relative grid gap-5 [grid-template-columns:1fr_1.3fr] md:grid-cols-1'>
-				<img
-					className='absolute top-0 left-5'
-					src='/images/btn-shape.webp'
-					alt=''
-				/>
+			<img
+				className='absolute top-0 left-5'
+				src='/images/btn-shape.webp'
+				srcSet='/images/btn-shape@2x.webp 2x'
+				alt=''
+			/>
 				<div>
 					<h2 className='text-siteDark font-semibold mb-10 max-w-[453px] text-[48px] leading-[1.2]'>
 						Let's make something special

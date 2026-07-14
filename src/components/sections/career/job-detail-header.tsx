@@ -23,6 +23,7 @@ const JobDetailHeader = () => {
 						<img
 							className='absolute right-0 top-0 rotate-90 xlsm:hidden'
 							src='/images/btn-shape.webp'
+							srcSet='/images/btn-shape@2x.webp 2x'
 							alt=''
 						/>
 						<h3 className='font-semibold leading-9 text-[24px]'>

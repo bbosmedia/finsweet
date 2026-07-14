@@ -30,7 +30,7 @@ const Navbar = () => {
 		<nav className='bg-darkBlue border-b border-b-white/5 z-[99]'>
 			<div className='max-w-[1320px] w-full px-5 mx-auto flex items-center justify-between h-[80px]'>
 				<Link to='/'>
-					<img src='/images/Logo.webp' alt='Site Logo' width='122' height='25' />
+					<img src='/images/Logo.webp' srcSet='/images/Logo@2x.webp 2x' alt='Site Logo' width='122' height='25' />
 				</Link>
 				<button
 					aria-label={active ? 'Close menu' : 'Open menu'}

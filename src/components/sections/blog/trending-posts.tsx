@@ -43,6 +43,7 @@ const TrendingPosts = () => {
 							<img
 								className='absolute top-0 right-0 rotate-90 lsm:hidden'
 								src='/images/btn-shape.webp'
+								srcSet='/images/btn-shape@2x.webp 2x'
 								alt=''
 								width='28'
 								height='28'

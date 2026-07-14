@@ -10,6 +10,7 @@ const DecorativeShape = ({ className }: DecorativeShapeProps) => {
 		<img
 			className={cn('absolute right-5 top-0 rotate-90', className)}
 			src='/images/btn-shape.webp'
+			srcSet='/images/btn-shape@2x.webp 2x'
 			alt=''
 		/>
 	)

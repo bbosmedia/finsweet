@@ -17,6 +17,7 @@ const PrimaryButton: FC<IPrimaryButton> = ({ link, text }) => {
 				className='absolute top-0 left-0'
 				alt=''
 				src='/images/btn-shape.webp'
+				srcSet='/images/btn-shape@2x.webp 2x'
 			/>
 			<span>{text}</span>
 			<BsArrowRight />

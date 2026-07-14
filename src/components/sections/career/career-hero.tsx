@@ -4,11 +4,12 @@ const CareerHero = () => {
 	return (
 		<header className='py-24 max-[425px]:py-[30px]'>
 			<div className='max-w-[1320px] w-full px-5 mx-auto text-center flex flex-col items-center relative'>
-				<img
-					className='absolute right-5 top-0 rotate-90  md:hidden'
-					src='/images/btn-shape.webp'
-					alt=''
-				/>
+			<img
+				className='absolute right-5 top-0 rotate-90  md:hidden'
+				src='/images/btn-shape.webp'
+				srcSet='/images/btn-shape@2x.webp 2x'
+				alt=''
+			/>
 				<h3 className='font-medium [letter-spacing:3px] uppercase text-gray-500 mb-4'>
 					CAREER AT FINSWEET
 				</h3>
