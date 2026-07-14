@@ -1,13 +1,13 @@
 import React from 'react'
-import { CareerItemApply, CareerItemHeader, CareerItemMain, Subscription } from '../../components'
+import { JobApplicationForm, JobDetailHeader, JobDetailContent, NewsletterForm } from '../../components'
 
 const CareerItem = () => {
 	return (
-		<main className='career-item-page'>
-			<CareerItemHeader />
-			<CareerItemMain />
-			<CareerItemApply />
-			<Subscription />
+		<main>
+			<JobDetailHeader />
+			<JobDetailContent />
+			<JobApplicationForm />
+			<NewsletterForm />
 		</main>
 	)
 }

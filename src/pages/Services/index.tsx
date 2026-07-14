@@ -1,15 +1,15 @@
 import React from 'react'
-import { HomeProcess, ServiceHeader, ServicesMain, Subscription } from '../../components'
+import { ServicesHero, ProcessSection, ServicesList, NewsletterForm } from '../../components'
 
 const Services = () => {
 	return (
-		<main className='services-page'>
-			<ServiceHeader />
+		<main>
+			<ServicesHero />
 			<div className='bg-lightGrey'>
-				<HomeProcess />
+				<ProcessSection />
 			</div>
-			<ServicesMain />
-			<Subscription />
+			<ServicesList />
+			<NewsletterForm />
 		</main>
 	)
 }

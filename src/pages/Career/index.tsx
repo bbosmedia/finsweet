@@ -1,18 +1,18 @@
 import React from 'react'
 import {
-	CareerHeader,
-	CompanyCulture,
-	CompanyVacancies,
-	Subscription
+	CareerHero,
+	OpenPositions,
+	CultureSection,
+	NewsletterForm
 } from '../../components'
 
 const Career = () => {
 	return (
-		<main className='career-page'>
-			<CareerHeader />
-			<CompanyVacancies />
-			<CompanyCulture />
-			<Subscription />
+		<main>
+			<CareerHero />
+			<OpenPositions />
+			<CultureSection />
+			<NewsletterForm />
 		</main>
 	)
 }

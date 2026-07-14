@@ -1,0 +1,6 @@
+export { default as TrendingPosts } from './trending-posts'
+export { default as RecentPosts } from './recent-posts'
+export { default as AllPostsGrid } from './all-posts-grid'
+export { default as PostDetailHeader } from './post-detail-header'
+export { default as PostDetailBody } from './post-detail-body'
+export { default as AuthorProfileHeader } from './author-profile-header'

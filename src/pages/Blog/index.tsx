@@ -1,13 +1,13 @@
 import React from 'react'
-import { BlogAllPosts, BlogRecentPost, BlogTrending, Subscription } from '../../components'
+import { TrendingPosts, RecentPosts, AllPostsGrid, NewsletterForm } from '../../components'
 
 const Blog = () => {
 	return (
-		<main className='blog-page'>
-			<BlogTrending />
-			<BlogRecentPost />
-			<BlogAllPosts />
-			<Subscription />
+		<main>
+			<TrendingPosts />
+			<RecentPosts />
+			<AllPostsGrid />
+			<NewsletterForm />
 		</main>
 	)
 }

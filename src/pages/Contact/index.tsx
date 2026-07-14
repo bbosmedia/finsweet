@@ -1,10 +1,10 @@
 import React from 'react'
-import { ContactHeader } from '../../components'
+import { ContactHero } from '../../components'
 
 const Contact = () => {
   return (
-		<main className='contact-page'>
-			<ContactHeader />
+		<main>
+			<ContactHero />
 			<div className='max-w-[1320px] w-full px-5 mx-auto'>
 				<iframe
         className='mb-24 lsm:mb-6'

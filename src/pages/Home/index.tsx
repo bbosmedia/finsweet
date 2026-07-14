@@ -1,26 +1,26 @@
 import React from 'react'
 import {
-	HomeAbout,
-	HomeBlogs,
-	HomeCustomer,
-	HomeHeader,
-	HomeProcess,
-	HomeSerivces,
-	Subscription
+	AboutSection,
+	LatestPostsSection,
+	TestimonialsSection,
+	HeroSection,
+	ProcessSection,
+	ExpertiseSection,
+	ServicesSection,
+	NewsletterForm
 } from '../../components'
-import HomeExpertice from '../../components/HomeExpertise'
 
 const Home = () => {
 	return (
-		<main className='home-page'>
-			<HomeHeader />
-			<HomeAbout />
-			<HomeExpertice />
-			<HomeSerivces />
-			<HomeProcess />
-			<HomeCustomer />
-			<HomeBlogs title='Read our latest blogs & news' />
-			<Subscription />
+		<main>
+			<HeroSection />
+			<AboutSection />
+			<ExpertiseSection />
+			<ServicesSection />
+			<ProcessSection />
+			<TestimonialsSection />
+			<LatestPostsSection title='Read our latest blogs & news' />
+			<NewsletterForm />
 		</main>
 	)
 }

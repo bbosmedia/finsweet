@@ -1,1 +1,0 @@
-export const serviceHeaderLinks:string[] = ['Technecial Support', 'Development', 'AWS/Azeru', 'Consulting', 'Information Technology']

@@ -1,31 +1,54 @@
-export { default as Navbar } from './Navbar'
-export { default as HomeHeader } from './HomeHeader'
-export { default as MainButton } from './MainButton'
-export { default as HomeAbout } from './HomeAbout'
-export { default as HomeExpertise } from './HomeExpertise'
-export { default as HomeSerivces } from './HomeSerivces'
-export { default as HomeProcess } from './HomeProcess'
-export { default as HomeCustomer } from './HomeCustomer'
-export { default as HomeBlogs } from './HomeBlogs'
-export { default as Subscription } from './Subscription'
-export { default as Footer } from './Footer'
-export { default as ServiceHeader } from './ServiceHeader'
-export { default as ServicesMain } from './SericesMain'
-export { default as CompanyHeader } from './CompanyHeader'
-export { default as CompanyOurStory } from './CompanyOurStory'
-export { default as CompanyLogos } from './CompanyLogos'
-export { default as CompanyVision } from './CompanyVision'
-export { default as CompanyMeet } from './CompanyMeet'
-export { default as CareerHeader } from './CareerHeader'
-export { default as CompanyVacancies } from './CompanyVacancies'
-export { default as CompanyCulture } from './CompanyCulture'
-export { default as CareerItemHeader } from './CareerItemHeader'
-export { default as CareerItemMain } from './CareerItemMain'
-export { default as CareerItemApply } from './CareerItemApply'
-export { default as BlogTrending } from './BlogTrending'
-export { default as BlogRecentPost } from './BlogRecentPost'
-export { default as BlogAllPosts } from './BlogAllPosts'
-export { default as SingleBlogHeader } from './SingleBlogHeader'
-export { default as SingleBlogBody } from './SingleBlogBody'
-export { default as SingleBloggerHeader } from './SingleBloggerHeader'
-export { default as ContactHeader } from './ContactHeader'
+// UI
+export { PrimaryButton } from './ui'
+
+// Shared
+export { Navbar, Footer, NewsletterForm } from './shared'
+
+// Cards
+export { ProcessCard, TestimonialCard } from './cards'
+
+// Sections - Home
+export {
+	HeroSection,
+	AboutSection,
+	ExpertiseSection,
+	ServicesSection,
+	ProcessSection,
+	TestimonialsSection,
+	LatestPostsSection
+} from './sections/home'
+
+// Sections - Blog
+export {
+	TrendingPosts,
+	RecentPosts,
+	AllPostsGrid,
+	PostDetailHeader,
+	PostDetailBody,
+	AuthorProfileHeader
+} from './sections/blog'
+
+// Sections - Career
+export {
+	CareerHero,
+	JobApplicationForm,
+	JobDetailHeader,
+	JobDetailContent
+} from './sections/career'
+
+// Sections - Company
+export {
+	CompanyHero,
+	OurStory,
+	BrandLogos,
+	VisionStatement,
+	TeamSection,
+	OpenPositions,
+	CultureSection
+} from './sections/company'
+
+// Sections - Contact
+export { ContactHero } from './sections/contact'
+
+// Sections - Services
+export { ServicesHero, ServicesList } from './sections/services'

@@ -1,22 +1,22 @@
 import React from 'react'
 import {
-	CompanyHeader,
-	CompanyLogos,
-	CompanyOurStory,
-	CompanyVision,
-	CompanyMeet,
-	HomeExpertise
+	CompanyHero,
+	BrandLogos,
+	OurStory,
+	VisionStatement,
+	TeamSection,
+	ExpertiseSection
 } from '../../components'
 
 const Company = () => {
 	return (
-		<main className='company-page'>
-			<CompanyHeader />
-			<CompanyOurStory />
-			<CompanyLogos />
-			<HomeExpertise />
-			<CompanyVision />
-			<CompanyMeet />
+		<main>
+			<CompanyHero />
+			<OurStory />
+			<BrandLogos />
+			<ExpertiseSection />
+			<VisionStatement />
+			<TeamSection />
 		</main>
 	)
 }

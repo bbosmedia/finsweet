@@ -1,12 +1,12 @@
 import React from 'react'
-import { SingleBlogBody, SingleBlogHeader, Subscription } from '../../components'
+import { PostDetailBody, PostDetailHeader, NewsletterForm } from '../../components'
 
 const SingleBlog = () => {
 	return (
-		<main className='single-blog'>
-			<SingleBlogHeader />
-			<SingleBlogBody />
-			<Subscription />
+		<main>
+			<PostDetailHeader />
+			<PostDetailBody />
+			<NewsletterForm />
 		</main>
 	)
 }
