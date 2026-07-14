@@ -38,6 +38,7 @@ const Slider = ({ children, dots = true, autoPlay = true, interval = 3000 }: Sli
 					{items.map((_, i) => (
 						<button
 							key={i}
+							aria-label={`Go to slide ${i + 1}`}
 							onClick={() => setCurrent(i)}
 							className={cn(
 								'w-2 h-2 rounded-full transition-colors',

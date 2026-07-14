@@ -33,6 +33,7 @@ const Navbar = () => {
 					<img src='/images/Logo.webp' alt='Site Logo' />
 				</Link>
 				<button
+					aria-label={active ? 'Close menu' : 'Open menu'}
 					className='border-none text-white outline-none hidden text-[24px] h-[80px] max-[990px]:block'
 					onClick={() => setActive(!active)}
 				>

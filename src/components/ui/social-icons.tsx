@@ -18,6 +18,13 @@ const iconMap = {
 	linkedin: BsLinkedin
 }
 
+const iconLabels: Record<SocialPlatform, string> = {
+	facebook: 'Facebook',
+	twitter: 'Twitter',
+	instagram: 'Instagram',
+	linkedin: 'LinkedIn'
+}
+
 const SocialIcons = ({
 	icons,
 	variant = 'dark',
@@ -33,11 +40,8 @@ const SocialIcons = ({
 				return (
 					<a
 						key={icon}
-						className={cn(
-							baseColor,
-							'transition-[all] duration-[400ms] ease-in-out',
-							hoverColor
-						)}
+						aria-label={iconLabels[icon]}
+						className={cn(baseColor, 'transition-[all] duration-[400ms] ease-in-out', hoverColor)}
 						href='#'
 					>
 						<Icon />

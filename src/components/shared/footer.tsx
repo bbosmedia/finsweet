@@ -34,12 +34,12 @@ const Footer = () => {
 					alt=''
 				/>
 				<div>
-					<h3 className='text-siteDark font-semibold mb-10 max-w-[453px] text-[48px] leading-[1.2]'>
+					<h2 className='text-siteDark font-semibold mb-10 max-w-[453px] text-[48px] leading-[1.2]'>
 						Let's make something special
-					</h3>
-					<h5 className='text-siteDark mb-7 leading-[1.5] text-[24px]'>
+					</h2>
+					<h3 className='text-siteDark mb-7 leading-[1.5] text-[24px]'>
 						Let's talk! 🤙
-					</h5>
+					</h3>
 					<div className='mb-4'>
 						<a className='block font-medium' href='tel:02079932905'>
 							020 7993 2905
@@ -68,7 +68,7 @@ const Footer = () => {
 							))}
 						</ul>
 						<div>
-							<h6 className='font-semibold mb-3'>Service</h6>
+							<h4 className='font-semibold mb-3'>Service</h4>
 							<ul className='flex flex-col gap-3'>
 								{serviceLinks.map(link => (
 									<li key={link}>
@@ -80,7 +80,7 @@ const Footer = () => {
 							</ul>
 						</div>
 						<div>
-							<h6 className='font-semibold mb-3'>Resources</h6>
+							<h4 className='font-semibold mb-3'>Resources</h4>
 							<ul className='flex flex-col gap-3'>
 								{resourceLinks.map(link => (
 									<li key={link}>
@@ -105,7 +105,7 @@ const Footer = () => {
 			<div className='bg-siteOrange'>
 				<div className='max-w-[1320px] w-full px-5 mx-auto flex items-center justify-between py-5 lsm:flex-col lsm:gap-7'>
 					<div className='flex items-center gap-4 lsm:order-2 xsm:flex-col'>
-						<Link to='/'>
+						<Link to='/' aria-label='Home'>
 							<img
 								className='h-[24.3px]'
 								src='/images/Logo-black.webp'
@@ -115,16 +115,16 @@ const Footer = () => {
 						<p>&copy; {new Date().getFullYear()} Finsweet</p>
 					</div>
 					<div className='flex items-center gap-3 lsm:order-1'>
-						<a href='facebook.com'>
+						<a href='facebook.com' aria-label='Facebook'>
 							<BsFacebook />
 						</a>
-						<a href='facebook.com'>
+						<a href='facebook.com' aria-label='Twitter'>
 							<BsTwitter />
 						</a>
-						<a href='facebook.com'>
+						<a href='facebook.com' aria-label='Instagram'>
 							<BsInstagram />
 						</a>
-						<a href='facebook.com'>
+						<a href='facebook.com' aria-label='LinkedIn'>
 							<BsLinkedin />
 						</a>
 					</div>

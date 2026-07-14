@@ -9,29 +9,29 @@ const TestimonialCard = () => {
 				src='/images/quote.webp'
 				alt='Quote'
 			/>
-			<h4 className='font-semibold opacity-90 max-w-[490px] mb-6 text-darkBlue text-[18px] lsm:text-[18px] md:text-[24px] leading-[1.4] md:leading-[36px]'>
+			<p className='font-semibold opacity-90 max-w-[490px] mb-6 text-darkBlue text-[18px] lsm:text-[18px] md:text-[24px] leading-[1.4] md:leading-[36px]'>
 				Finsweet has been a wonderful partner to work with. I have been a
 				customer now for the past few months now and I have had nothing but
 				positive experiences!
-			</h4>
+			</p>
 			<div className='flex justify-between lsm:flex-col lsm:gap-3 lsm:items-start'>
 				<div className='flex items-center'>
 					<img
 						className='w-[38px] h-[38px] mr-4'
 						src='/images/home-customers/1.webp'
-						alt='Man'
+						alt='Johnny Andro'
 					/>
-					<aside>
-						<h6 className='font-semibold opacity-90'>Johnny Andro</h6>
+					<div>
+						<p className='font-semibold opacity-90'>Johnny Andro</p>
 						<p className='font-medium text-gray-500 text-[14px] leading-[20px]'>
 							Director, Company
 						</p>
-					</aside>
+					</div>
 				</div>
 				<img
 					className='h-[25px] w-auto object-contain'
 					src='/images/logos/1.webp'
-					alt='Logo'
+					alt='Company logo'
 				/>
 			</div>
 		</div>

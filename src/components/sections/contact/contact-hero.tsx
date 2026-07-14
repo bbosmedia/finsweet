@@ -118,32 +118,32 @@ const ContactHero = () => {
 						<div className='bg-[linear-gradient(180deg,#FFA155_0%,#FFA155_25%,#FFD3AF_25%,#FFD3AF_75%,#3A41DC_75%,#3A41DC_100%)] -left-6 bottom-0 absolute w-6 h-[186px] md:hidden' />
 						<div className='w-full flex flex-col gap-6 lsm:gap-5 max-w-[280px]'>
 							<div>
-								<h5 className='text-white/70 text-[14px]'>Location</h5>
+								<p className='text-white/70 text-[14px]'>Location</p>
 								<div className='w-full my-3 bg-white opacity-[0.08] h-px'></div>
-								<h3 className='font-medium text-[18px] leading-[28px]'>
+								<p className='font-medium text-[18px] leading-[28px]'>
 									DLF Cybercity, Bhubaneswar, India, &52050
-								</h3>
+								</p>
 							</div>
 							<div>
-								<h5 className='text-white/70 text-[14px]'>Working Hour</h5>
+								<p className='text-white/70 text-[14px]'>Working Hour</p>
 								<div className='w-full my-3 bg-white opacity-[0.08] h-px'></div>
-								<h3 className='font-medium text-[18px] leading-[28px]'>
+								<p className='font-medium text-[18px] leading-[28px]'>
 									Monday To Friday
-								</h3>
-								<h3 className='font-medium text-[18px] leading-[28px]'>
+								</p>
+								<p className='font-medium text-[18px] leading-[28px]'>
 									9:00 AM to 8:00 PM
-								</h3>
-								<h5 className='text-white/70 text-[14px]'>
+								</p>
+								<p className='text-white/70 text-[14px]'>
 									Our Support Team is available 24Hrs
-								</h5>
+								</p>
 							</div>
 							<div>
-								<h5 className='text-white/70 text-[14px]'>Contact Us</h5>
+								<p className='text-white/70 text-[14px]'>Contact Us</p>
 								<div className='w-full my-3 bg-white opacity-[0.08] h-px'></div>
-								<h3 className='font-medium text-[18px] leading-[28px]'>
+								<p className='font-medium text-[18px] leading-[28px]'>
 									020 7993 2905
-								</h3>
-								<h5 className='text-white/70 text-[14px]'>Hello@ether.com</h5>
+								</p>
+								<p className='text-white/70 text-[14px]'>Hello@ether.com</p>
 							</div>
 							<SocialIcons
 								icons={['facebook', 'twitter', 'instagram', 'linkedin']}
