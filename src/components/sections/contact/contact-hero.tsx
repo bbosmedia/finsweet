@@ -29,7 +29,8 @@ const ContactHero = () => {
 								message: ''
 							}}
 							onSubmit={values => {
-								console.log(values)
+								// TODO: implement form submission
+								void values
 							}}
 						>
 							{({ errors, touched }) => (

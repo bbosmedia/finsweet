@@ -1,4 +1,4 @@
-import React from 'react'
+import type React from 'react'
 import Home from '@/pages/Home'
 import Services from '@/pages/Services'
 import Company from '@/pages/Company'

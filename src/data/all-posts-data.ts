@@ -1,4 +1,4 @@
-import { IBlog } from './recent-posts-data'
+import type { IBlog } from './recent-posts-data'
 
 export const dataAllPosts: IBlog[] = [
 	{

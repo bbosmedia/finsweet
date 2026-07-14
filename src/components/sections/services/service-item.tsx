@@ -1,5 +1,5 @@
 import React from 'react'
-import { IServicesData } from '@/data/services-list-data'
+import type { IServicesData } from '@/data/services-list-data'
 
 const ServiceItem = ({
 	item,

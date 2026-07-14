@@ -60,7 +60,7 @@ const Footer = () => {
 								<li key={link}>
 									<Link
 										className='hover:text-main'
-										to={'/' + link.toLowerCase()}
+										to={`/${link.toLowerCase()}`}
 									>
 										{link}
 									</Link>

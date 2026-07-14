@@ -10,7 +10,7 @@ const RecentPosts = () => {
 					Read Recent Post
 				</h2>
 				<div className='grid grid-cols-2 gap-8 md:grid-cols-1'>
-					{recentPostsData.map((post, index) => (
+					{recentPostsData.map(post => (
 						<div className='grid grid-cols-2 gap-0 lg:grid-cols-1'>
 							<div className='w-full h-full'>
 								<img
